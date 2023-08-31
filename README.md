@@ -10,9 +10,11 @@
 - Sanz, Rodrigo
 
 # Vistas
-Vistas en figma
-https://www.figma.com/file/XeItQjuxV0f3FYBS35KxnT/EL-BUEN-SABOR?type=design&t=5witP42MSIwZ5twD-6
-controlar URL
+Las vistas fueron desarrolladas en la herramienta Figma.
+Se encuentra cada una de ellas con su Historia de Usuario correspondiente en:
+https://docs.google.com/document/d/163OGJC2sKKz9yV9mZ0mntyHomvSGU4PsNJOY01dxFV4/edit?usp=sharing
+
+
 
 
 
