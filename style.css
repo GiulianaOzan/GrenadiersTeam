@@ -252,3 +252,25 @@ header #LogoNavPrincipal{
     gap: 10px;
     cursor: pointer; 
 }
+
+/* Ocultar las flechas de ajuste solo para la clase .sin-flechas */
+.sin-flechas::-webkit-inner-spin-button,
+.sin-flechas::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btonRegistrarte {
+ 
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #CF5C36;
+  border-radius: 10px;
+  width: 50%;
+  align-items: center;
+
+}
+.btonRegistrarte:hover{
+/*  border-color: #000;*/
+}
