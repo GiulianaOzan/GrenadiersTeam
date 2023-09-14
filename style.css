@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none !important;
+}
+/* Nav-Bar Principal*/
+.nav{
+    background: #FFF;
+}
+header a{
+    color: #000;  
+    font-weight: 600; 
+}
+header a:hover{
+    color: #CF5C36;
+}
+header #LogoNavPrincipal{
+    width: 140px;
+    height: 140px;
+}
+
+.btnCuenta{
+    width: 150px;
+    padding: 10px 5px;
+    align-items: center;
+    background-color: #CF5C36;
+    color: #FFF;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.btnCuenta img{
+    background: #CF5C36;
+    width: 30px;
+    height: 30px;
+}
+.dropdown-item:hover{
+    color: #CF5C36;
+}
+.btn-Carrito{
+    width: 60px;
+    height: 50px;
+    background-color: #CF5C36;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btn-Carrito img{
+    width: 26px;
+    height: 26px;
+    background: #CF5C36;
+    align-items: center;
+}
+/* Nav-Bar Categorias*/
+.Nav-Categorias .nav{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: linear-gradient(356deg, rgba(0, 0, 0, 0.25) 2.74%, rgba(255, 255, 255, 0.00) 96.5%);
+}
+
+.pCateg{
+   font-size: 18px;
+   background: transparent;
+   font-weight: bold;
+   background: transparent;
+   margin-top: 25px;
+   padding-right: 5rem;
+
+   
+}
+.botonCategoria{
+    border-color: #000;
+}
+.botonCategoria:hover{
+    border-color: #CF5C36;
+}
+.nav-item {
+    background: transparent;
+    height: 60px; 
+    margin: 15px;
+}
+.botonCategoria .IconCateg{
+    background: transparent;
+}  
+.botonCategoria .IconCateg:hover{
+    color: #CF5C36 !important;
+}
+
+/* Grilla de productos*/
+.pSinStock{
+    color: #EA2B1F;
+    font-weight: bold;
+}
+.pStock{
+    color: #7CB518;
+    font-weight: bold;
+}
+
+
+.card-footer h5{
+    font-weight: bolder;
+    background: transparent;
+    padding-top: 5px;
+}
+
+.btonComprar img{
+    background: #CF5C36;
+    width: 25px;
+}
+
+.btonComprar {
+    margin: 0px 5px 0px 20px;
+    background-color: #CF5C36;
+}
+.btonComprar:hover{
+    border-color: #000;
+}
+.btonComprar img:hover{
+    background: #FFF;
+    color: #CF5C36;
+}
+/* footer*/
+.footer{
+    background-color: #CF5C36;
+}
+
+/* Estilo Descripcion Producto*/
+/* Calificacion Estrellas*/
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+  /* Icono like */
+  .con-like {
+    --red: rgb(255, 50, 50);
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+  .con-like .like {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .con-like .checkmark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .con-like .outline,
+  .con-like .filled {
+    fill: var(--red);
+    position: absolute;
+  } 
+  .con-like .filled {
+    animation: kfr-filled 0.5s;
+    display: none;
+  }
+  .con-like .celebrate {
+    position: absolute;
+    animation: kfr-celebrate 0.5s;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+  .con-like .poly {
+    stroke: var(--red);
+    fill: var(--red);
+  }
+  .con-like .like:checked ~ .checkmark .filled {
+    display: block
+  }
+  .con-like .like:checked ~ .checkmark .celebrate {
+    display: block
+  }
+  
+  @keyframes kfr-filled {
+    0% {
+      opacity: 0;
+      transform: scale(0);}
+    50% {
+      opacity: 1;
+      transform: scale(1.2);}
+  }
+  @keyframes kfr-celebrate {
+    0% {
+      transform: scale(0);}
+    50% {
+      opacity: 0.8;}
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+      display: none;}
+  }
+.btn-AgregarCarr {
+    width: 200px;
+    height: 50px;
+    background-color: #7CB518;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #FFF;
+}
+.btn-Volver{
+    width: 120px;
+    padding: 10px 5px 10px 4px;
+    align-items: center;
+    background-color: #CF5C36;
+    color: #FFF;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer; 
+}
