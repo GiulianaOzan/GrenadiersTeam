@@ -317,3 +317,8 @@ header #LogoNavPrincipal{
   border: 1px solid #000000; 
   border-radius: 10px;
 }
+.textobinvenido{
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+}
