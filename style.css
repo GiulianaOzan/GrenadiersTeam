@@ -337,6 +337,18 @@ header #LogoNavPrincipal{
   padding: 0;
   margin: 20px auto 0 auto;
 }
+
+.lineaPru {
+  border-top: 1px solid black;
+  height: 2px;
+  width: 150px;
+  padding: 0;
+  margin: -1px auto 0 auto; /* Ajusta el margen superior a un valor negativo */
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0px;
+}
+
 .btn-nuevo {
   width: 120px;
   padding: 10px 5px 10px 4px;
@@ -379,6 +391,7 @@ header #LogoNavPrincipal{
 }
 .IconModificar:hover path{
  stroke: #F19F42;
+}
 /*
 .btonRegistrarte:hover{
  border-color: #000;
@@ -403,7 +416,7 @@ header #LogoNavPrincipal{
 }
 
 .recuadro span {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .formulario{
@@ -430,4 +443,4 @@ header #LogoNavPrincipal{
   font-size: 38px;
   text-align: center;
   font-weight: bold;
-} }
+} 
