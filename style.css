@@ -55,6 +55,9 @@ header #LogoNavPrincipal{
     background: #CF5C36;
     align-items: center;
 }
+.btn-notif:hover path {
+  stroke: #CF5C36;
+}
 /* Nav-Bar Categorias*/
 .Nav-Categorias .nav{
     padding-top: 15px;
@@ -253,6 +256,37 @@ header #LogoNavPrincipal{
     cursor: pointer; 
 }
 
+/* Estilos historia num-11 */
+.btn-Eliminar{
+  color: #797171;
+  display: flex;
+  gap: 5px;
+}
+.btn-Eliminar:hover {
+  color: #EA2B1F;
+}
+.IconEliminar:hover path{
+ stroke: #EA2B1F;
+}
+.CajaContenedor{
+  height: 272px;
+  border-radius: 20px;
+  border: 0.5px solid #000;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btnSiguiente{
+    width: 200px;
+    background-color: #CF5C36;
+    color: #FFF;
+    border: none;
+    border-radius: 12px;    
+}
+.btnSiguiente:hover path{
+  stroke:#000
+}
+/* --------------------- */
+
+
 /* Ocultar las flechas de ajuste solo para la clase .sin-flechas */
 .sin-flechas::-webkit-inner-spin-button,
 .sin-flechas::-webkit-outer-spin-button {
@@ -271,6 +305,78 @@ header #LogoNavPrincipal{
   align-items: center;
 
 }
-.btonRegistrarte:hover{
-/*  border-color: #000;*/
+/*.btonRegistrarte:hover{
+  border-color: #000;}*/
+
+
+
+
+
+/* Estilos historia num-20 */
+.btn-rubro {
+  background-color:  #CF5C36; 
+  border-radius: 12px;
+  border-color:  #CF5C36; 
+  font-size: 20px; /* Establecer el tamaño de fuente */
+  font-weight: 800;
+  width: 500px;
+  color: #FFF;
+  
+
+}
+.btn-rubro:hover {
+  background-color:  #FFF; /* Cambia el color a rojo al pasar el cursor*/
+  color: #CF5C36;
+  border-color: #CF5C36 ; 
+  border-width: 2px;
+}
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  width: auto;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+.btn-nuevo {
+  width: 120px;
+  padding: 10px 5px 10px 4px;
+  align-items: center;
+  background-color: #7CB518;
+  color: #FFF;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer; 
+}
+
+.modal  .btncancelar {
+  width: 120px ;
+  height: 38px;
+  background-color: #f14242;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.modal .btncancelar:hover {
+  text-decoration-line: underline ;
+  text-decoration-color: white ;
+}
+
+.modal .btnguardar {
+  width: 120px;
+  height: 38px;
+  background-color: #F19F42;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.modal .btnguardar:hover {
+  text-decoration-line: underline;
+  text-decoration-color: black;
+}
+.IconModificar:hover path{
+ stroke: #F19F42;
 }
