@@ -379,4 +379,55 @@ header #LogoNavPrincipal{
 }
 .IconModificar:hover path{
  stroke: #F19F42;
+/*
+.btonRegistrarte:hover{
+ border-color: #000;
+}*/
+
+.recuadro{
+  border: 2px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+  width: 400px;
+  align-items: center;
+
 }
+
+.imagenG{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.recuadro span {
+  font-size: 20px;
+}
+
+.formulario{
+  padding: 5px;
+}
+.contenedorCheck{
+  display: flex; 
+  align-items: center;
+  padding: 20px;
+}
+.textoResgistrate {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.imagenG{
+  display: flex; 
+  padding: 10px; 
+  border: 1px solid #000000; 
+  border-radius: 10px;
+}
+.textobinvenido{
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+} }

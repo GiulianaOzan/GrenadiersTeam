@@ -63,140 +63,86 @@
 
     <section class="container my-4 pb-5">
         <div class="row">
+
             <!-- Columna para los elementos de texto y la imagen -->
-            <div class="col-6">
-                <div class="p-3" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                    <div class="row g-2">
-                        <div class="col-md">
-                            <div class="d-flex align-items-center">
-                                <p class="me-3">Nombre:</p>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingNombre" placeholder="text">
-                                    <label for="floatingNombre">Nombre</label>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md">
-                            <div class="d-flex align-items-center">
-                                <p class="me-3">Apellido:</p>
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingApellido" placeholder="text">
-                                    <label for="floatingApellido">Apellido</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <p class="me-3">Correo electornico:</p>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingCorreo" placeholder="name@example.com">
-                            <label for="floatingCorreo">Correo electornico</label>
-                        </div>
-                    </div>
-                    <div class="row g-2">
-                        <div class="col-md">
-                            <div class="d-flex align-items-center">
-                                <p class="me-3">Direccion:</p>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingDireccion" placeholder="text">
-                                    <label for="floatingDireccion">Direccion</label>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-6 d-flex justify-content-center">
+                <div>
 
-                        <div class="col-md">
-                            <div class="d-flex align-items-center">
-                                <div class="form-floating">
-                                    <input type="number" class="form-control sin-flechas" id="floatingCodigoPostal"
-                                        placeholder="12345">
-                                    <label for="floatingCodigoPostal">Codigo Postal</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-2">
-                        <div class="col-md">
-                            <div class="d-flex align-items-center">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingCiudad" placeholder="text">
-                                    <label for="floatingCiudad">Ciudad</label>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="p-3"
+                        style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); border-radius: 10px; border: 1px solid;">
+                        <p class="textobinvenido">Bienvenido</p>
 
-                        <div class="col-md">
-                            <div class="d-flex align-items-center">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingPais" placeholder="text">
-                                    <label for="floatingPais">Pais</label>
+                        <div class="contenedorFormulario" style="padding: 8px;;">
+                            <div class="d-flex justify-content-center">
+                                <div class="formulario">
+                                    <input type="email" class="form-control" id="floatingCorreo"
+                                        placeholder="name@example.com" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingrese su usuario
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <p class="me-3">Correo electornico:</p>
-                        <div class="form-floating mb-3">
-                            <input type="number" class="form-control sin-flechas" id="floatingnro"
-                                placeholder="123456789">
-                            <label for="floatingnro">Correo electornico</label>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <p class="me-3">Contraseña:</p>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingContra" placeholder="password">
-                            <label for="floatingCorreo">Contraseña</label>
-                        </div>
-                    </div>
-                    <!-- Aquí puedes agregar más contenido si es necesario -->
-                    <!--<div class="col-md-6"> -->
 
-                    <!--</div> -->
-                    <div class="row" >
-                        <div class="col-12 d-flex justify-content-center">
-                            <button type="button" class="btonRegistrarte p-2 text-white">
-                                Regístrate
-                            </button>
+                            <div class="d-flex justify-content-center">
+                                <div class="formulario">
+                                    <input type="password" class="form-control" id="floatingContra"
+                                        placeholder="Contraseña" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingrese su contraseña
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                        <!-- Aquí puedes agregar más contenido si es necesario -->
+
+
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center" style="padding: 10px;">
+                                <button type="button" class="btonRegistrarte p-1 text-white">
+                                    Iniciar Sesion
+                                </button>
+                            </div>
+                        </div>
+                        <div class="linea">O</div>
+                        <center>
+                            <div class="recuadro text-center">
+                                <div class="imagenG">
+                                    <img src="Componentes/Google__G__Logo.svg" alt="G" class="img-fluid"
+                                        style="height: 40px; width: 40px;">
+                                    <a href="https://accounts.google.com/login" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span style="padding: 15px;"> Iniciar Sesión con Google</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </center>
+                        <p style="text-align: center;">¿Olvidaste tu contraseña?</p>
+                    </div>
+
+                    <p> </p>
+                    <div class="p-4"
+                        style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); border-radius: 10px; border: 1px solid; text-align: center;">
+                        <p style="display: inline;">¿No tienes cuenta?</p> <a href="" target="_blank"
+                            rel="noopener noreferrer">
+                            <span> Registrate</span>
+                        </a>
                     </div>
                 </div>
             </div>
 
+
             <!-- Columna para la imagen -->
-            <div class="col-md-6">
-                <img src="Componentes/Logo.svg" alt="Imagen" class="img-fluid">
+            <div class="col-6">
+
+                <img src="Imagenes/Component 1imagenH1.png" alt="Imagen" class="img"
+                    style="height: 400px; width: 450px; margin: 30px 40px;">
             </div>
         </div>
     </section>
-
-
-
-    <!-- Botones<div class="col-md">
-    <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
-    </div>
-
-    </div>
-    <div class="col-md">
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div>
-    </div>
-    -->
-    </div>
-    </div>
-    </section>
-
-
-
-
-
-
-
-
+    <br>
+    <br>
     <!-- footer-->
     <footer class="footer py-3">
         <div class="container">
