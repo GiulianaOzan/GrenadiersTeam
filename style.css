@@ -506,3 +506,24 @@ header #LogoNavPrincipal{
   border-radius: 5px;
   border-color: #ced4da;
 }
+/* Historia num 21-23 */
+.crearymodifreceta{
+  background-color: #7CB518;
+  width: 340px;
+  color: #FFF;
+}
+
+.crearymodifreceta:hover{
+  background-color: #7CB518;
+  
+}
+
+.agregarCollapse{
+  background-color: #7CB518;
+  color: #FFF;
+  
+}
+
+.agregarCollapse:hover{
+  background-color: #7CB518;
+}
