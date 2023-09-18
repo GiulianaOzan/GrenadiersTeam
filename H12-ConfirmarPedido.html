@@ -188,36 +188,106 @@
                     </div>
                   </div>
             </div>
-            <div class="col-12 my-4 d-flex justify-content-start">
-                <button type="button" class="btn btn-Volver w-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 22 21" fill="none">
-                        <path d="M11.05 18.8685C15.6943 18.8685 19.4593 15.1035 19.4593 10.4592C19.4593 5.8148 15.6943 2.0498 11.05 2.0498C6.40562 2.0498 2.64062 5.8148 2.64062 10.4592C2.64062 15.1035 6.40562 18.8685 11.05 18.8685Z" stroke="white" stroke-width="1.2614"/>
-                        <path d="M14.414 10.4593H7.68652M7.68652 10.4593L10.2093 7.93652M7.68652 10.4593L10.2093 12.9821" stroke="white" stroke-width="1.2614" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                        Seguir Comprando
-                </button>
-            </div>
         </div>
-       
         <div class="col-4 mt-3">
-            <div class="CajaContenedor">
-                <p class="col-12 fs-5 fw-bold px-4 pt-3"> 3 Articulos </p>
-                <span class="row-cols-1 px-4 pt-2 d-inline-flex gap-4">
-                    <p class="fs-5 fw-regular">Total:</p>
-                    <p class="fs-5 fw-bold">$6000</p>
-                </span>
-                <div class="linea mt-0"></div>
-                <div class="col-12 my-4 d-flex justify-content-center">
-                    <button type="button" class="btn btnSiguiente">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 26 32" fill="none">
-                            <path d="M10.4997 28.9163C17.6334 28.9163 23.4163 23.1334 23.4163 15.9997C23.4163 8.866 17.6334 3.08301 10.4997 3.08301C3.366 3.08301 -2.41699 8.866 -2.41699 15.9997C-2.41699 23.1334 3.366 28.9163 10.4997 28.9163Z" stroke="white" stroke-width="1.9375"/>
-                            <path d="M5.33301 16C11.3861 16 9.6132 16 15.6663 16M15.6663 16L11.7913 12.125M15.6663 16L11.7913 19.875" stroke="white" stroke-width="1.9375" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        Confirmar Pedido
-                    </button>
-                </div>
-            </div>
+            <div class="CajaContenedor" style="width: 400px;">
+                <form class="my-4 mx-3">
+                    <div class=" row mb-3">
+                      <label for="example" class="form-label col-12">Codigo de descuento</label>
+                      <div class="col-12 d-inline-flex gap-2">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <button type="button" class="btnguardar col-6 text-white"> Aplicar </button>
+                      </div>
+                    </div>
+                    <div class="lineaClarita mt-0"></div>
+                    <!-- forma de entrega-->
+                    <div class="row my-2">
+                        <h5 class="col-12">Forma de Entrega</h5>
+                        <div class="col-12 form-check mx-3 d-inline-flex gap-4">
+                            <div class="col-6">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label " for="flexRadioDefault1">
+                                Retiro por Local
+                                </label>
+                            </div>
+                            <small class="col-6" style="color: #797171;"> 10% de descuento</small>
+                          </div>
+                          <div class="form-check mx-3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label ps-2 pt-1" for="flexRadioDefault2">
+                              Envio a domicilio
+                            </label>
+                            </button>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                    <div class="accordion-body mt-2">
+                                        <div class="row form-floating mb-2">
+                                            <input type="text" class="form-control-sm col-8" id="floatingInput" placeholder="Domicilio">
+                                        </div>
+                                        <div class="row form-floating mb-2">
+                                            <input type="text" class="form-control-sm col-8" id="floatgInput" placeholder="Telefono">
+                                        </div>
+                                        <div class="row form-floating mb-2">
+                                            <input type="text" class="form-control-sm col-8" id="floatngInput" placeholder="Departamento">
+                                        </div> 
+                                    </div>
+                                </div>
+                          </div>
+                    </div>
+                    <!-- Metodos de pago-->
+                    <div class="row my-3">
+                        <h5 class="col-12">Metodo de Pago</h5>
+                        <div class="col-12 form-check mx-3 d-inline-flex gap-4">
+                            <div class="col-6">
+                                <input class="form-check-input" type="radio" name="flexRadioDefau" id="flexRadioDefau1">
+                                <label class="form-check-label ">
+                                Efectivo
+                                </label>
+                            </div>
+                          </div>
+                          <div class="form-check mx-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefau" id="flexRadioDefau2" checked>
+                            <label class="form-check-label" >
+                              Mercado Pago
+                            </label>
+                          </div>
+                    </div>
+                    <div class="lineaClarita mt-0"></div>
+                    <span class="row-cols-1 mx-3">
+                        <div class="d-flex justify-content-between ">
+                            <p class="fw-regular fs-6">Subtotal</p>
+                            <p class="fs-6 fw-regular">$6000</p>
+                        </div>
+                        <div class="d-flex justify-content-between mt-0 ">
+                            <p class="fw-regular fs-6">Descuento</p>
+                            <p class="fs-6 fw-regular">$0</p>
+                        </div>
+                    </span>
+                    <span class="row-cols-1 pt-2 ">
+                        <div class="d-flex justify-content-between">
+                        <p class="fs-5 fw-bold">Total:</p>
+                        <p class="fs-5 fw-bold">$6000</p>
+                        </div>
+                    </span>
+                    <div class="col-12 my-4 d-flex justify-content-center gap-2">
+                        <button type="button" class="btn-Volver">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.5998 21.6673C16.9385 21.6673 21.2664 17.3394 21.2664 12.0007C21.2664 6.6619 16.9385 2.33398 11.5998 2.33398C6.26102 2.33398 1.93311 6.6619 1.93311 12.0007C1.93311 17.3394 6.26102 21.6673 11.5998 21.6673Z" stroke="white" stroke-width="1.45"/>
+                                <path d="M15.4667 11.9996H7.7334M7.7334 11.9996L10.6334 9.09961M7.7334 11.9996L10.6334 14.8996" stroke="white" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Volver
+                        </button>
+                        <button type="button" class="btn btnSiguiente" style="background-color: #187CB5;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 26 32" fill="none">
+                                <path d="M10.4997 28.9163C17.6334 28.9163 23.4163 23.1334 23.4163 15.9997C23.4163 8.866 17.6334 3.08301 10.4997 3.08301C3.366 3.08301 -2.41699 8.866 -2.41699 15.9997C-2.41699 23.1334 3.366 28.9163 10.4997 28.9163Z" stroke="white" stroke-width="1.9375"/>
+                                <path d="M5.33301 16C11.3861 16 9.6132 16 15.6663 16M15.6663 16L11.7913 12.125M15.6663 16L11.7913 19.875" stroke="white" stroke-width="1.9375" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            Finalizar Pedido
+                        </button>
+                    </div>
+                  </form>
+            </div>
         </div>
     </div>
   </section>

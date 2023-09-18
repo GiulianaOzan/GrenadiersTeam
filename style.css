@@ -255,7 +255,12 @@ header #LogoNavPrincipal{
     gap: 10px;
     cursor: pointer; 
 }
-
+.btn-Volver:hover {
+   color: #000;
+}
+.btn-Volver:hover path {
+  stroke: #000;
+}
 /* Estilos historia num-11 */
 .btn-Eliminar{
   color: #797171;
@@ -269,14 +274,14 @@ header #LogoNavPrincipal{
  stroke: #EA2B1F;
 }
 .CajaContenedor{
-  height: 272px;
+  height: auto;
   border-radius: 20px;
   border: 0.5px solid #000;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .btnSiguiente{
     width: 200px;
-    background-color: #CF5C36;
+    background-color: #187CB5;
     color: #FFF;
     border: none;
     border-radius: 12px;    
@@ -286,6 +291,13 @@ header #LogoNavPrincipal{
 }
 /* --------------------- */
 
+.lineaClarita {
+  border-top: 1px solid rgba(121, 113, 113, 0.3);
+  height: 2px;
+  width: auto;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
 
 /* Ocultar las flechas de ajuste solo para la clase .sin-flechas */
 .sin-flechas::-webkit-inner-spin-button,
@@ -305,8 +317,8 @@ header #LogoNavPrincipal{
   align-items: center;
 
 }
-/*.btonRegistrarte:hover{
-  border-color: #000;}*/
+.btonRegistrarte:hover{
+  border-color: #000;}
 
 
 
@@ -365,7 +377,7 @@ header #LogoNavPrincipal{
   text-decoration-color: white ;
 }
 
-.modal .btnguardar {
+.btnguardar {
   width: 120px;
   height: 38px;
   background-color: #F19F42;
@@ -379,11 +391,13 @@ header #LogoNavPrincipal{
 }
 .IconModificar:hover path{
  stroke: #F19F42;
+
+ /* -------------------------------*/
 /*
 .btonRegistrarte:hover{
  border-color: #000;
 }*/
-
+/* ----------------Historia 1---------------*/
 .recuadro{
   border: 2px;
   padding: 10px;
