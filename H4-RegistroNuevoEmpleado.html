@@ -94,8 +94,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <button type="button"
-                    class="btnAgregarEmpleado" data-bs-toggle="modal" data-bs-target="#AñadirUsuario">
+                <button type="button" class="btnAgregarEmpleado" data-bs-toggle="modal" data-bs-target="#AñadirUsuario">
                     <img src="Componentes/Agregar.svg" alt="" srcset=""
                         style="background-color: rgb(124,181,24); margin-right: 10px; height: 30px; width: 30px;">
                     Agregar nuevo empleado
@@ -103,163 +102,8 @@
             </div>
 
             <!--MODAL-->
-            <div class="modal fade" id="#AñadirUsuario" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <section class="container my-4 pb-5">
 
-                                <!-- Columna para los elementos de texto y la imagen -->
-
-                                <div class="col-6 d-flex justify-content-center">
-                                    <div>
-                                        <p class="texto" style="font-size: 26px; font-weight: bold; padding: 0px;">+
-                                            Agregar nuevo empelado
-                                        </p>
-                                        <div class="linea" style="width: 105%; margin: 0px -15px;"></div>
-                                        <p class="tex"
-                                            style="font-size: 20px; font-weight: bold; padding: 0px; text-decoration: underline black solid;">
-                                            Datos personales
-                                        </p>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="contenedorFormula" style="padding: 10px;">
-                                                    <div>
-                                                        <p class="me-3 mb-0" style="padding: 5px;">Nombre:</p>
-                                                        <div class="formu">
-                                                            <input type="text" class="form-control"
-                                                                id="exampleFormControlInput1"
-                                                                placeholder="Nombre Completo" required>
-                                                        </div>
-                                                    </div>
-
-                                                    <div>
-                                                        <p class="me-3 mb-0" style="padding: 5px;">Correo electronico:
-                                                        </p>
-                                                        <div class="formu">
-                                                            <input type="email" class="form-control" id="floatingCorreo"
-                                                                placeholder="name@example.com" required>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <p class="me-3 mb-0" style="padding: 5px;">Direccion:</p>
-                                                        <div class="formu">
-                                                            <input type="text" class="form-control"
-                                                                id="floatingDireccion" placeholder="Direccion">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="contenedorFormula" style="padding: 8px;">
-                                                    <div>
-                                                        <p class="me-3 mb-0" style="padding: 5px;">Apellido:</p>
-                                                        <div class="formu">
-                                                            <input type="email" class="form-control" id="Apellido"
-                                                                placeholder="Apellido" required>
-                                                        </div>
-                                                    </div>
-
-                                                    <div>
-                                                        <p class="me-3 mb-0" style="padding: 5px;">Telefono:</p>
-                                                        <div class="formulario d-flex">
-                                                            <input type="number" class="form-control sin-flechas me-3"
-                                                                id="floatingnro" placeholder="0261"
-                                                                style="width: 50px; font-size: small;">
-                                                            <input type="number" class="form-control sin-flechas"
-                                                                id="floatingnro" placeholder="Telefono"
-                                                                style="width: 200px;">
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <p class="me-3 mb-0" style="padding: 5px;">Departamento:</p>
-                                                        <div class="formu">
-                                                            <input type="text" class="form-control"
-                                                                id="floatingDireccion" placeholder="Departamento">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <p class="tex"
-                                            style="font-size: 20px; font-weight: bold; text-decoration: underline;">
-                                            <u>Datos de Usuario</u>
-                                        </p>
-                                        <div class="row">
-                                            <div class="contenedorFormula" style="padding: 10px;">
-                                                <p class="me-3 mb-0" style="padding: 5px;">Rol de usuario:</p>
-                                                <div class="contenedorFormula" style="padding: 8px;">
-                                                    <div class="form-flo">
-                                                        <select class="form" id="floatingSelect"
-                                                            aria-label="Floating label select example"
-                                                            style="height: 40px; width: 300px;">
-                                                            <option selected>Rol</option>
-                                                            <option value="1">Cocinero</option>
-                                                            <option value="2">Delivery</option>
-                                                            <option value="3">Administrador</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row g-2">
-                                                    <div class="contenedorFormula"
-                                                        style="padding: 10px; display: flex;">
-                                                        <div class="col-md">
-                                                            <div>
-
-                                                                <p class="me-3 mb-0" style="padding: 5px;">Contraña:</p>
-                                                                <div class="formu">
-                                                                    <input type="password" class="form-control"
-                                                                        id="floatingDireccion" placeholder="Contraseña"
-                                                                        style="width: 300px;">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md">
-                                                            <div>
-                                                                <p class="me-3 mb-0" style="padding: 5px;">Repetir
-                                                                    contraseña:</p>
-                                                                <div class="formu">
-                                                                    <input type="password" class="form-control"
-                                                                        id="floatingDireccion"
-                                                                        placeholder="Repetir contraseña"
-                                                                        style="width: 300px;">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row mx-3">
-                                            <div class="col-12 modal-footer d-flex justify-content-between ">
-                                                <button type="button" class="btncancelar"
-                                                    data-bs-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btnguardar"
-                                                    data-bs-dismiss="modal">Guardar</button>
-                                            </div>
-                                        </div>
-
-
-
-
-
-                                    </div>
-
-                                </div>
-
-                            </section>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
 
 
 
@@ -398,8 +242,8 @@
                                         style="padding: 5px; height: 55px; width: 55px;">
                                     <div
                                         style="display: inline-block; font-size: 14px; text-align: center; align-items: center;">
-                                        <p style="font-weight: bold; margin: 10px 0px;">Lava platos</p>
-                                        <p>LavaPlatos@gmail.com</p>
+                                        <p style="font-weight: bold; margin: 10px 0px;">Delivery 1</p>
+                                        <p>Delivery1@gmail.com</p>
                                     </div>
                                 </label>
                             </div>
@@ -430,8 +274,8 @@
                                         style="padding: 5px; height: 55px; width: 55px;">
                                     <div
                                         style="display: inline-block; font-size: 14px; text-align: center; align-items: center;">
-                                        <p style="font-weight: bold; margin: 10px 0px;">Ayudante de cocina</p>
-                                        <p>AyudanteCocina@gmail.com</p>
+                                        <p style="font-weight: bold; margin: 10px 0px;">Delivery 2</p>
+                                        <p>Delivery2@gmail.com</p>
                                     </div>
                                 </label>
                             </div>
@@ -483,6 +327,132 @@
         </div>
     </div>
 
+    <!-- Modal Modificar -->
+    <div class="modal fade" id="AñadirUsuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="texto" style="font-size: 26px; font-weight: bold; padding: 0px;">+ Agregar nuevo
+                        empelado
+                    </p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="tex"
+                        style="font-size: 20px; font-weight: bold; padding: 0px; text-decoration: underline black solid;">
+                        Datos personales
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="contenedorFormula" style="padding: 10px;">
+                                <div>
+                                    <p class="me-3 mb-0" style="padding: 5px;">Nombre:</p>
+                                    <div class="formu">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Nombre Completo" required>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="me-3 mb-0" style="padding: 5px;">Correo electronico:</p>
+                                    <div class="formu">
+                                        <input type="email" class="form-control" id="floatingCorreo"
+                                            placeholder="name@example.com" required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="me-3 mb-0" style="padding: 5px;">Direccion:</p>
+                                    <div class="formu">
+                                        <input type="text" class="form-control" id="floatingDireccion"
+                                            placeholder="Direccion" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="contenedorFormula" style="padding: 8px;">
+                                <div>
+                                    <p class="me-3 mb-0" style="padding: 5px;">Apellido:</p>
+                                    <div class="formu">
+                                        <input type="email" class="form-control" id="Apellido" placeholder="Apellido"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="me-3 mb-0" style="padding: 5px;">Telefono:</p>
+                                    <div class="formulario d-flex">
+                                        <input type="number" class="form-control sin-flechas me-3" id="floatingnro"
+                                            placeholder="0261" style="width: 50px; font-size: small;" required>
+                                        <input type="number" class="form-control sin-flechas" id="floatingnro"
+                                            placeholder="Telefono" style="width: 200px;"required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="me-3 mb-0" style="padding: 5px;">Departamento:</p>
+                                    <div class="formu">
+                                        <input type="text" class="form-control" id="floatingDireccion"
+                                            placeholder="Departamento" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="tex" style="font-size: 20px; font-weight: bold; text-decoration: underline;">
+                        <u>Datos de Usuario</u>
+                    </p>
+                    <div class="row">
+                        <div class="contenedorFormula" style="padding: 10px;">
+                            <p class="me-3 mb-0" style="padding: 5px;">Rol de usuario:</p>
+                            <div class="contenedorFormula" style="padding: 8px;">
+                                <div class="form-flo">
+                                    <select class="form" id="floatingSelect" aria-label="Floating label select example"
+                                        style="height: 40px; width: 300px;" required>
+                                        <option selected>Rol</option>
+                                        <option value="1">Cocinero</option>
+                                        <option value="2">Delivery</option>
+                                        <option value="3">Administrador</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row g-2">
+                                <div class="contenedorFormula" style="padding: 10px; display: flex;">
+                                    <div class="col-md">
+                                        <div>
+
+                                            <p class="me-3 mb-0" style="padding: 5px;">Contraña:</p>
+                                            <div class="formu">
+                                                <input type="password" class="form-control" id="floatingDireccion"
+                                                    placeholder="Contraseña" style="width: 300px;" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <div>
+                                            <p class="me-3 mb-0" style="padding: 5px;">Repetir contraseña:</p>
+                                            <div class="formu">
+                                                <input type="password" class="form-control" id="floatingDireccion"
+                                                    placeholder="Repetir contraseña" style="width: 300px;" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-3">
+                        <div class="col-12 modal-footer d-flex justify-content-between ">
+                            <button type="button" class="btncancelar" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btnguardar" data-bs-dismiss="modal">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer-->
     <footer class="footer py-3">
