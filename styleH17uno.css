@@ -1,0 +1,222 @@
+
+
+
+body{
+    background-color: #FFFFFF(3, 99, 182);
+    min-height: 900px;
+    position: relative;
+}
+
+
+/*  NAV VAR */
+.navbar {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    
+}
+
+.navbar_df{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_links{
+    padding-left: 50px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+
+
+a{
+text-decoration: none;
+color: black;
+font-weight: 500;
+font-size: 20px;
+}
+
+a:hover{
+    color: #CF5C36;
+
+}
+
+
+.logonav{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.navbar_a{
+    gap: 2rem;
+    display: flex;
+}
+
+.but_navbar{
+    border-radius: 10px;
+    background-color: #CF5C36;
+    color: #FFFFFF;
+    border-color: #CF5C36;
+    box-shadow: none;
+    height: 40px;
+
+    border: 1px solid #ccc; /* Borde (puedes ajustar el grosor y el color) */
+    box-shadow: none; /* Elimina cualquier sombra */
+    padding: 10px 20px; /* Ajusta el relleno según tus preferencias */
+    align-items: center;
+}
+
+
+.titulo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.barra{
+    background-color: #CF5C36;
+    width: 1200px;
+    height: 20px;
+    margin:0 auto;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+
+.grid_layout{
+
+display: grid;
+grid-template-columns: auto auto auto; /* con auto pongo la cantidad de columnas; si quiero 2, pongo auto auto*/
+justify-content: center;
+width: 1250px;
+margin: 0 auto;
+padding: 20px;
+grid-row-gap: 50px;
+grid-column-gap: 20px;
+
+}
+
+.caja{
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    border: 4px solid #CF5C36 ;
+    background-color: #FFFFFF;
+}
+
+.caja:hover{
+    
+    border: 4px solid #07c811 ;
+    
+}
+
+.caja_text_superior{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.caja_text_superior1{
+    display: flex;
+
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.caja_text_superiorv2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+
+.caja_text_cat{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;   
+}
+
+.list{
+    list-style-type: none;
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.list_li{
+    display: flex;
+    justify-content:space-between;
+}
+
+.viewmore{
+    display: flex;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #CF5C36;
+    border-style: none;
+    align-items: center;
+    transition: 1s;
+    
+}
+
+.viewmore:hover{
+border: 2px solid black;
+
+}
+
+
+
+.linea-negra {
+    border: 1px solid #000; /* Borde de 1 píxel sólido negro */
+    margin: 0; /* Espaciado antes y después de la línea */
+    width: 260px;
+}
+
+
+
+
+
+/*  FOOTER */
+.footerr {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CF5C36;
+
+}
+
+.iconos_footer{
+    display: flex;
+    gap: 1rem;
+    margin-left: 50px;
+}
+
+.foter_right{
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+

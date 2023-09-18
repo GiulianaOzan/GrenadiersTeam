@@ -1,0 +1,142 @@
+body{
+    background-color: rgba(0, 0, 0, 0.575); /* Rojo semi-transparente */
+   width: 500px;
+   height: 500px;
+  
+
+
+}
+
+
+.principal_div{
+    background-color: rgba(134, 127, 127, 0.829);
+    border-radius: 10px;
+    
+}
+
+
+button{
+    justify-content: space-between;
+    height: 20px;
+    width: 80px;  
+    border-radius: 10px;
+}
+
+
+.but__{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    
+    
+}
+
+.but1{
+    background-color: #CF5C36;
+    border-style: none;
+    color:white;
+}
+
+
+.grid_layout{
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns: 25% 75% auto;
+    justify-content: center;
+
+}
+
+.caja{
+    border: 2px solid #CF5C36;
+    border-radius: 10px;
+    background-color: #A5A2A2;
+}
+
+.caja__{
+    border: 2px solid #CF5C36;
+    border-radius: 10px;
+    
+}
+
+.caja_-1{
+background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 3px solid #F19F42;
+    border-radius: 10px;
+}
+
+.caja_-1text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    height: 30px;
+}
+
+.caja_text1{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.caja_list{
+    margin: 0;
+    padding: 0;
+}
+
+.caja_list_li1{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.caja_list_li{
+    margin-left: 15px;
+    
+}
+
+.caja_text2{
+    margin-top: 5px;
+    font-size: small;
+}
+
+.caja_butrecipe{
+    width: 50px;
+    margin-left: 15px;
+    background-color: #7CB518;
+    border-style: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.caja_butrecipe:hover{
+    border: 2px solid black;
+    width: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+
+.recipe{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.linea-vertical {
+    width: 2px; /* Ancho de la línea */
+    height: 150px; /* Altura de la línea (ocupa toda la altura del contenedor) */
+    background-color: black; /* Color de la línea (en este caso, negro) */
+    
+}
+
+
+
+
+
