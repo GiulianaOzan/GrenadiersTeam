@@ -349,6 +349,18 @@ header #LogoNavPrincipal{
   padding: 0;
   margin: 20px auto 0 auto;
 }
+
+.lineaPru {
+  border-top: 1px solid black;
+  height: 2px;
+  width: 150px;
+  padding: 0;
+  margin: -1px auto 0 auto; /* Ajusta el margen superior a un valor negativo */
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0px;
+}
+
 .btn-nuevo {
   width: 120px;
   padding: 10px 5px 10px 4px;
@@ -391,8 +403,7 @@ header #LogoNavPrincipal{
 }
 .IconModificar:hover path{
  stroke: #F19F42;
-
- /* -------------------------------*/
+}
 /*
 .btonRegistrarte:hover{
  border-color: #000;
@@ -417,7 +428,7 @@ header #LogoNavPrincipal{
 }
 
 .recuadro span {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .formulario{
@@ -444,4 +455,54 @@ header #LogoNavPrincipal{
   font-size: 38px;
   text-align: center;
   font-weight: bold;
-} }
+} 
+
+.button-containerH4_1 {
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+}
+
+.button-containerH4 {
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+}
+
+.buttonH4_1 {
+  margin: 5px; /* Elimina los márgenes para que los botones estén pegados */
+  padding: 5px 10px; /* Agrega espacio interno para separar los botones si es necesario */
+  background-color: rgb(217,217, 217); /*gris de figma */
+  color: black;
+  width: 150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border: none;
+
+}
+
+.buttonH4_2 {
+  margin: 0; /* Elimina los márgenes para que los botones estén pegados */
+  padding: 5px 10px; /* Agrega espacio interno para separar los botones si es necesario */
+  border: 0.5px solid;
+  background-color: white;
+  color: black;
+  width: 200px;
+  font-size: 16px;
+}
+
+.btnAgregarEmpleado{
+  width: 290px; 
+  height: 40px; 
+  background-color: rgb(124,181,24);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  justify-content: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: -2px 0px;
+}
+
+.form {
+  border-radius: 5px;
+  border-color: #ced4da;
+}

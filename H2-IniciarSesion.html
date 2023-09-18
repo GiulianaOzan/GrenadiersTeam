@@ -100,20 +100,25 @@
 
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center" style="padding: 10px;">
-                                <button type="button" class="btonRegistrarte p-1 text-white">
+                                <button type="button" class="btonRegistrarte p-1 text-white" data-bs-toggle="modal"
+                                    data-bs-target="#NuevoEmpleado">
                                     Iniciar Sesion
                                 </button>
                             </div>
                         </div>
-                        <div class="linea">O</div>
+                        <div style="text-align: center;">
+                            <div class="lineaPru"></div>
+                            <p style="display: inline-block; vertical-align: middle; margin: 0;">O</p>
+                            <div class="lineaPru"></div>
+                        </div>
                         <center>
                             <div class="recuadro text-center">
                                 <div class="imagenG">
                                     <img src="Componentes/Google__G__Logo.svg" alt="G" class="img-fluid"
-                                        style="height: 40px; width: 40px;">
+                                        style="height: 30px; width: 30px;">
                                     <a href="https://accounts.google.com/login" target="_blank"
                                         rel="noopener noreferrer">
-                                        <span style="padding: 15px;"> Iniciar Sesión con Google</span>
+                                        <span style="padding: 10px;"> Iniciar Sesión con Google</span>
                                     </a>
                                 </div>
                             </div>
@@ -143,6 +148,50 @@
     </section>
     <br>
     <br>
+
+
+    <!-- Modal Modificar -->
+    <div class="modal fade" id="NuevoEmpleado" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title fw-bold" id="staticBackdropLabel">Primer ingreso</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bold" style="text-align: center;">Realice el cambio de contraseña</p>
+                    <p class="me-3 mb-0">Contraseña actual:</p>
+                            <div class="formulario">
+                                <input type="password" class="form-control" id="floatingContra" placeholder="Contraseña"
+                                    required>
+                            </div>
+                            <div>
+                                <p class="me-3 mb-0">Contraseña nueva:</p>
+                                <div class="formula">
+                                    <input type="password" class="form-control" id="floatingContra" placeholder="Contraseña"
+                                        required>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="me-3 mb-0">Confirmar contraseña:</p>
+                                <div class="formula">
+                                    <input type="password" class="form-control" id="floatingContra" placeholder="Contraseña"
+                                        required>
+                                </div>
+                            </div>
+
+                        
+                    <div class="row mx-3">
+                        <div class="col-12 modal-footer d-flex justify-content-center ">
+                            <button type="button" class="btnguardar" data-bs-dismiss="modal">Iniciar sesion</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- footer-->
     <footer class="footer py-3">
         <div class="container">
