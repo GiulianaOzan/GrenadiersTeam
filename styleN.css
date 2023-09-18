@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none !important;
+}
+/* Nav-Bar Principal*/
+.nav{
+    background: #FFF;
+}
+header a{
+    color: #000;  
+    font-weight: 600; 
+}
+header a:hover{
+    color: #CF5C36;
+}
+header #LogoNavPrincipal{
+    width: 140px;
+    height: 140px;
+}
+
+.btnCuenta{
+    width: 150px;
+    padding: 10px 5px;
+    align-items: center;
+    background-color: #CF5C36;
+    color: #FFF;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.btnCuenta img{
+    background: #CF5C36;
+    width: 30px;
+    height: 30px;
+}
+.dropdown-item:hover{
+    color: #CF5C36;
+}
+.btn-Carrito{
+    width: 60px;
+    height: 50px;
+    background-color: #CF5C36;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btn-Carrito img{
+    width: 26px;
+    height: 26px;
+    background: #CF5C36;
+    align-items: center;
+}
+.btn-notif:hover path {
+  stroke: #CF5C36;
+}
+/* Nav-Bar Categorias*/
+.Nav-Categorias .nav{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: linear-gradient(356deg, rgba(0, 0, 0, 0.25) 2.74%, rgba(255, 255, 255, 0.00) 96.5%);
+}
+
+.pCateg{
+   font-size: 18px;
+   background: transparent;
+   font-weight: bold;
+   background: transparent;
+   margin-top: 25px;
+   padding-right: 5rem;
+
+   
+}
+.botonCategoria{
+    border-color: #000;
+}
+.botonCategoria:hover{
+    border-color: #CF5C36;
+}
+.nav-item {
+    background: transparent;
+    height: 60px; 
+    margin: 15px;
+}
+.botonCategoria .IconCateg{
+    background: transparent;
+}  
+.botonCategoria .IconCateg:hover{
+    color: #CF5C36 !important;
+}
+
+/* Grilla de productos*/
+.pSinStock{
+    color: #EA2B1F;
+    font-weight: bold;
+}
+.pStock{
+    color: #7CB518;
+    font-weight: bold;
+}
+
+
+.card-footer h5{
+    font-weight: bolder;
+    background: transparent;
+    padding-top: 5px;
+}
+
+.btonComprar img{
+    background: #CF5C36;
+    width: 25px;
+}
+
+.btonComprar {
+    margin: 0px 5px 0px 20px;
+    background-color: #CF5C36;
+}
+.btonComprar:hover{
+    border-color: #000;
+}
+.btonComprar img:hover{
+    background: #FFF;
+    color: #CF5C36;
+}
+/* footer*/
+.footer{
+    background-color: #CF5C36;
+}
+
+/* Estilo Descripcion Producto*/
+/* Calificacion Estrellas*/
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+  /* Icono like */
+  .con-like {
+    --red: rgb(255, 50, 50);
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+  .con-like .like {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .con-like .checkmark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .con-like .outline,
+  .con-like .filled {
+    fill: var(--red);
+    position: absolute;
+  } 
+  .con-like .filled {
+    animation: kfr-filled 0.5s;
+    display: none;
+  }
+  .con-like .celebrate {
+    position: absolute;
+    animation: kfr-celebrate 0.5s;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+  .con-like .poly {
+    stroke: var(--red);
+    fill: var(--red);
+  }
+  .con-like .like:checked ~ .checkmark .filled {
+    display: block
+  }
+  .con-like .like:checked ~ .checkmark .celebrate {
+    display: block
+  }
+  
+  @keyframes kfr-filled {
+    0% {
+      opacity: 0;
+      transform: scale(0);}
+    50% {
+      opacity: 1;
+      transform: scale(1.2);}
+  }
+  @keyframes kfr-celebrate {
+    0% {
+      transform: scale(0);}
+    50% {
+      opacity: 0.8;}
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+      display: none;}
+  }
+.btn-AgregarCarr {
+    width: 200px;
+    height: 50px;
+    background-color: #7CB518;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #FFF;
+}
+.btn-Volver{
+    width: 120px;
+    padding: 10px 5px 10px 4px;
+    align-items: center;
+    background-color: #CF5C36;
+    color: #FFF;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer; 
+}
+/* Cambio en botones correspondientes - N */
+.btn-Entregar{
+    width: 120px;
+    padding: 10px 5px 10px 4px;
+    align-items: center;
+    background-color: #36cf5f;
+    color: #FFF;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer; 
+}
+
+.btn-Entregar:hover{
+  color: #000;
+}
+
+.btn-Entregar:hover path {
+  stroke: #000;
+}
+/* Btn Ver detalle - N */
+.btn-VerDetalle{
+  width: 120px;
+  padding: 10px 5px 10px 4px;
+  align-items: center;
+  background-color: #c6c639d1;
+  color: #FFF;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer; 
+}
+
+.btn-Volver:hover {
+   color: #000;
+}
+.btn-Volver:hover path {
+  stroke: #000;
+}
+/* Estilos historia num-11 */
+.btn-Eliminar{
+  color: #797171;
+  display: flex;
+  gap: 5px;
+}
+.btn-Eliminar:hover {
+  color: #EA2B1F;
+}
+.IconEliminar:hover path{
+ stroke: #EA2B1F;
+}
+.CajaContenedor{
+  height: auto;
+  border-radius: 20px;
+  border: 0.5px solid #000;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btnSiguiente{
+    width: 200px;
+    background-color: #187CB5;
+    color: #FFF;
+    border: none;
+    border-radius: 12px;    
+}
+.btnSiguiente:hover path{
+  stroke:#000
+}
+/* --------------------- */
+
+.lineaClarita {
+  border-top: 1px solid rgba(121, 113, 113, 0.3);
+  height: 2px;
+  width: auto;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+/* Ocultar las flechas de ajuste solo para la clase .sin-flechas */
+.sin-flechas::-webkit-inner-spin-button,
+.sin-flechas::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btonRegistrarte {
+ 
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #CF5C36;
+  border-radius: 10px;
+  width: 50%;
+  align-items: center;
+
+}
+.btonRegistrarte:hover{
+  border-color: #000;}
+
+
+
+
+
+/* Estilos historia num-20 */
+.btn-rubro {
+  background-color:  #CF5C36; 
+  border-radius: 12px;
+  border-color:  #CF5C36; 
+  font-size: 20px; /* Establecer el tamaño de fuente */
+  font-weight: 800;
+  width: 500px;
+  color: #FFF;
+  
+
+}
+.btn-rubro:hover {
+  background-color:  #FFF; /* Cambia el color a rojo al pasar el cursor*/
+  color: #CF5C36;
+  border-color: #CF5C36 ; 
+  border-width: 2px;
+}
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  width: auto;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+.lineaPru {
+  border-top: 1px solid black;
+  height: 2px;
+  width: 150px;
+  padding: 0;
+  margin: -1px auto 0 auto; /* Ajusta el margen superior a un valor negativo */
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0px;
+}
+
+.btn-nuevo {
+  width: 120px;
+  padding: 10px 5px 10px 4px;
+  align-items: center;
+  background-color: #7CB518;
+  color: #FFF;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer; 
+}
+
+.modal  .btncancelar {
+  width: 120px ;
+  height: 38px;
+  background-color: #f14242;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.modal .btncancelar:hover {
+  text-decoration-line: underline ;
+  text-decoration-color: white ;
+}
+
+.btnguardar {
+  width: 120px;
+  height: 38px;
+  background-color: #F19F42;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.modal .btnguardar:hover {
+  text-decoration-line: underline;
+  text-decoration-color: black;
+}
+/* Agrego style al icono cocina - N */
+.IconCocina:hover path{
+  stroke: #F19F42;
+}
+.IconPagar:hover path{
+  stroke: #36cf5f;
+}
+.IconFactura:hover path{
+  stroke: #c6c639d1;
+}
+.center-content-detalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.IconModificar:hover path{
+ stroke: #F19F42;
+}
+/*
+.btonRegistrarte:hover{
+ border-color: #000;
+}*/
+/* ----------------Historia 1---------------*/
+.recuadro{
+  border: 2px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+  width: 400px;
+  align-items: center;
+
+}
+
+.imagenG{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.recuadro span {
+  font-size: 15px;
+}
+
+.formulario{
+  padding: 5px;
+}
+.contenedorCheck{
+  display: flex; 
+  align-items: center;
+  padding: 20px;
+}
+.textoResgistrate {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.imagenG{
+  display: flex; 
+  padding: 10px; 
+  border: 1px solid #000000; 
+  border-radius: 10px;
+}
+.textobinvenido{
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+} 
+
+.button-containerH4_1 {
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+}
+
+.button-containerH4 {
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+}
+
+.buttonH4_1 {
+  margin: 5px; /* Elimina los márgenes para que los botones estén pegados */
+  padding: 5px 10px; /* Agrega espacio interno para separar los botones si es necesario */
+  background-color: rgb(217,217, 217); /*gris de figma */
+  color: black;
+  width: 150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border: none;
+
+}
+
+.buttonH4_2 {
+  margin: 0; /* Elimina los márgenes para que los botones estén pegados */
+  padding: 5px 10px; /* Agrega espacio interno para separar los botones si es necesario */
+  border: 0.5px solid;
+  background-color: white;
+  color: black;
+  width: 200px;
+  font-size: 16px;
+}
+
+.btnAgregarEmpleado{
+  width: 290px; 
+  height: 40px; 
+  background-color: rgb(124,181,24);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  justify-content: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: -2px 0px;
+}
+
+.form {
+  border-radius: 5px;
+  border-color: #ced4da;
+}
+/* Historia num 21-23 */
+.crearymodifreceta{
+  background-color: #7CB518;
+  width: 340px;
+  color: #FFF;
+}
+
+.crearymodifreceta:hover{
+  background-color: #7CB518;
+  
+}
+
+.agregarCollapse{
+  background-color: #7CB518;
+  color: #FFF;
+  
+}
+
+.agregarCollapse:hover{
+  background-color: #7CB518;
+}
+/* BOTONES DE INGREDIENTES Y PRODUCTOS --------------------------------------------------------------------- */
+.btn-primary {
+  background-color:  #CF5C36; 
+  border-color:  #CF5C36; 
+  font-size: 30px; /* Establecer el tamaño de fuente */
+  padding: 10px 180px; /* Establecer el relleno (padding) */
+
+}
+.btn-primary:hover {
+  background-color:  #FFF; /* Cambia el color a rojo al pasar el cursor */
+  color: #CF5C36;
+  border-color: #CF5C36 ; 
+  border-width: 3px;
+}
+.btn-lg {
+  padding: 15px 200px; /* Ajusta el tamaño como desees */
+}
+.imagen-pequena {
+  width: 540px; /* Cambia este valor al tamaño deseado */
+  height: auto; /* Esto mantiene la proporción original */
+}
+.imagen-pequena1 {
+  width: 545px; /* Cambia este valor al tamaño deseado */
+  height: 360px; /* Esto mantiene la proporción original */
+}

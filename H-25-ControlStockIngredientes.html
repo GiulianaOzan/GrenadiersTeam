@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleN.css">
+
+    <title>El Buen Sabor</title>
+</head>
+
+<body>
+    <!-- Navegador principal-->
+    <header class="nav">
+        <div class="container">
+            <nav class="row row-cols-1">
+                <!-- Logo-->
+                <ul class="col-2 m-0">
+                    <a href="#">
+                        <img src="Componentes/Logo.svg" alt="Logo el buen sabor" id="LogoNavPrincipal">
+                    </a>
+                </ul>
+
+                <!-- Items-->
+                <ul class="col-6 list-unstyled d-inline-flex mt-5 mb-0">
+                    <li class="nav-item"><a href="#">Listado de Pedido</a></li>
+                    <li class="nav-item"><a href="#">Informe</a></li>
+                    <li class="nav-item"><a href="#">Administracion</a></li>
+                    <li class="py-1">
+                        <button type="button" class="btn">
+                            <img src="Componentes/Lupita.svg">
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Botones-->
+                <ul class="col-4 list-unstyled d-inline-flex justify-content-center mt-5 mb-0 gap-2">
+                    <li>
+                        <button type="button" class="btn btn-notif mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 35 39"
+                                fill="none">
+                                <path
+                                    d="M32.6078 27.6999C30.3481 24.9342 28.7528 23.5264 28.7528 15.9017C28.7528 8.91942 25.1873 6.43184 22.2527 5.22369C21.8629 5.06354 21.496 4.69573 21.3772 4.29536C20.8624 2.54341 19.4193 1 17.5011 1C15.5828 1 14.1388 2.54429 13.6293 4.29712C13.5105 4.70189 13.1436 5.06354 12.7538 5.22369C9.81569 6.4336 6.25371 8.91238 6.25371 15.9017C6.24931 23.5264 4.65399 24.9342 2.39432 27.6999C1.45806 28.8456 2.27816 30.5658 3.91572 30.5658H31.0952C32.7239 30.5658 33.5388 28.8403 32.6078 27.6999Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M23.1326 30.5659V31.9738C23.1326 33.4674 22.5392 34.8998 21.4831 35.9559C20.427 37.0121 18.9946 37.6054 17.501 37.6054C16.0074 37.6054 14.575 37.0121 13.5188 35.9559C12.4627 34.8998 11.8694 33.4674 11.8694 31.9738V30.5659"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button id=" dropdownMenu2 data-bs-toggle="dropdown" aria-expanded="false"
+                            class="btnCuenta">
+                            Admin
+                            <img src="Componentes/Usuario Admi.svg" alt="" srcset="">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><button class="dropdown-item" type="button">Mis Datos Personales</button></li>
+                            <li><button class="dropdown-item" type="button">Pedidos</button></li>
+                            <li><button class="dropdown-item" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+                                        fill="none">
+                                        <path
+                                            d="M6.75146 5.75C6.76055 4.11873 6.83288 3.23529 7.40917 2.65901C8.0682 2 9.12885 2 11.2502 2H12.0002C14.1215 2 15.1822 2 15.8411 2.65901C16.5002 3.31802 16.5002 4.37868 16.5002 6.5V12.5C16.5002 14.6213 16.5002 15.6819 15.8411 16.341C15.1822 17 14.1215 17 12.0002 17H11.2502C9.12885 17 8.0682 17 7.40917 16.341C6.83288 15.7647 6.76055 14.8812 6.75146 13.25"
+                                            stroke="black" stroke-width="1.125" stroke-linecap="round" />
+                                        <path d="M11.25 9.5H1.5M1.5 9.5L4.125 7.25M1.5 9.5L4.125 11.75" stroke="black"
+                                            stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Salir
+                                </button></li>
+                        </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container my-4">
+        <!-- Botones parte superior-->
+        <div class="row container">
+            <div class="col-3">
+                <button type="button" class="btn-Volver">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M11.5998 21.6673C16.9385 21.6673 21.2664 17.3394 21.2664 12.0007C21.2664 6.6619 16.9385 2.33398 11.5998 2.33398C6.26102 2.33398 1.93311 6.6619 1.93311 12.0007C1.93311 17.3394 6.26102 21.6673 11.5998 21.6673Z"
+                            stroke="white" stroke-width="1.45" />
+                        <path d="M15.4667 11.9996H7.7334M7.7334 11.9996L10.6334 9.09961M7.7334 11.9996L10.6334 14.8996"
+                            stroke="white" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Volver
+                </button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-rubro ">Stock de Ingredientes</button>
+            </div>
+
+            <div class="col-3 d-flex justify-content-end pe-5">
+                <button type="button" class="btn">
+                    <img src="Componentes/Lupita.svg">
+                </button>
+            </div>
+
+        </div>
+        <div class="linea my-4"></div>
+
+        <!-- Agrego comentario para sacar un div -->
+        <!-- Seccion botonnuevo-lupita-->
+        <!--  
+        <div class="row my-2">
+            <div class="col-3">
+                <button type="button" class="btn-nuevo" data-bs-toggle="modal" data-bs-target="#modalNuevo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 49 49" fill="none">
+                        <path
+                            d="M44.9167 24.5002C44.9167 28.5382 43.7193 32.4855 41.4759 35.8431C39.2325 39.2006 36.0438 41.8174 32.3131 43.3627C28.5826 44.9081 24.4774 45.3123 20.517 44.5246C16.5565 43.7367 12.9186 41.7923 10.0633 38.937C7.20797 36.0815 5.26347 32.4437 4.47569 28.4833C3.68789 24.5228 4.09223 20.4176 5.6375 16.6871C7.1828 12.9564 9.79966 9.76774 13.1572 7.52432C16.5147 5.28091 20.462 4.0835 24.5001 4.0835"
+                            stroke="white" stroke-width="3.0625" stroke-linecap="round" />
+                        <path d="M30.625 24.5H24.5M24.5 24.5H18.375M24.5 24.5V18.375M24.5 24.5V30.625" stroke="white"
+                            stroke-width="3.0625" stroke-linecap="round" />
+                        <path d="M29.6041 4.72656C36.7785 6.57315 42.4268 12.2214 44.2735 19.3959" stroke="white"
+                            stroke-width="3.0625" stroke-linecap="round" />
+                    </svg>
+                    Nuevo
+                </button>
+        -->
+        
+                <!-- Modal -->
+        <!-- 
+                <div class="modal fade" id="modalNuevo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="staticBackdropLabel">Crear/Modificar Rubro</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="Tomate">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Rubro Padre</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2"
+                                        placeholder="Vegetales">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Estado Alta/Baja</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2"
+                                        placeholder="Alta / Baja">
+                                </div>
+                                <div class="row mx-3">
+                                    <div class="col-12 modal-footer d-flex justify-content-between ">
+                                        <button type="button" class="btncancelar"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btnguardar"
+                                            data-bs-dismiss="modal">Guardar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             -->
+            <!-- Lupita -->
+            <!--  
+            <div class="col-7 d-flex justify-content-end pe-5">
+                <button type="button" class="btn">
+                    <img src="Componentes/Lupita.svg">
+                </button>
+            </div>
+        </div>
+            --> 
+
+
+    <!-- Seccion tabla-->
+    <div class="container">
+        <table class="table table-hover align-middle table-responsive">
+                <thead>
+                  <tr class="table-secondary">
+                
+                    <th scope="col" class="text-center" >Ingrediente</th>
+                    <th scope="col" class=" text-center" >Rubro</th>
+                    <th scope="col" class="col-2 text-center" >Precio de costo</th>
+                    <th scope="col" class="col-2 text-center " >Stock minimo</th>
+                    <th scope="col" class="col-2" >Stock actual</th>
+                    <th scope="col" class="col-2 text-center " >Unidad de medida</th>
+                    <th scope="col" class="col-2 text-center">Nivel de stock</th>
+                    <th scope="col" class=" text-center" >Estado</th>
+                    <th scope="col" class="w-25 text-center" >Acciones</th>
+                    
+                </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-warning">
+                    <th scope="row" class="text-center">Cheddar</th>
+                    <td class="text-center" >Hamburguesa</td>
+                    <td class="text-center">$800</td>
+                    <td class="text-center">50</td>
+                    <td class="text-center">45</td>
+                    <td class="text-center">gr</td>
+                    <td class="text-center">Faltante</td>
+                    <td class="text-center">Baja</td>
+
+                    <td class="text-center" >
+
+                        <button type="button" class="btn IconModificar m-0" data-bs-toggle="modal" data-bs-target="#modalModif">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                <path d="M29.3182 8.32694L31.2104 6.43456C34.3458 3.29916 39.4294 3.29916 42.5648 6.43456C45.7001 9.56995 45.7001 14.6534 42.5648 17.7888L40.6723 19.6812M29.3182 8.32694C29.3182 8.32694 29.5546 12.3483 33.1028 15.8965C36.6511 19.4447 40.6723 19.6812 40.6723 19.6812M29.3182 8.32694L11.9206 25.7245C10.7422 26.9029 10.153 27.4919 9.64634 28.1416C9.0486 28.908 8.53617 29.7372 8.11803 30.6145C7.76358 31.3583 7.5001 32.1488 6.97311 33.7296L4.74004 40.429M40.6723 19.6812L23.2749 37.0788C22.0964 38.257 21.5074 38.8463 20.8577 39.353C20.0913 39.9508 19.2622 40.4633 18.3848 40.8814C17.6411 41.2358 16.8506 41.4992 15.2697 42.0262L8.57043 44.2593M4.74004 40.429L4.19418 42.0666C3.93484 42.8445 4.13731 43.7022 4.71721 44.2822C5.2971 44.862 6.15485 45.0646 6.93285 44.8053L8.57043 44.2593M4.74004 40.429L8.57043 44.2593" stroke="black" stroke-width="1.5"/>
+                              </svg>
+                        </button>
+                        <button type="button" class="btn IconEliminar"data-bs-toggle="modal" data-bs-target="#modalEliminar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                            <path d="M41.854 12.25H7.14551" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                            <path d="M38.4507 17.3545L37.5115 31.4402C37.1502 36.8606 36.9695 39.5709 35.2034 41.223C33.4374 42.8753 30.7212 42.8753 25.2887 42.8753H23.7099C18.2773 42.8753 15.5611 42.8753 13.795 41.223C12.029 39.5709 11.8483 36.8606 11.4869 31.4402L10.5479 17.3545" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                            <path d="M19.3955 22.458L20.4163 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                            <path d="M29.6038 22.458L28.583 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                            <path d="M13.2705 12.25C13.3846 12.25 13.4416 12.25 13.4934 12.2487C15.1745 12.2061 16.6577 11.1371 17.2297 9.55565C17.2473 9.507 17.2654 9.4529 17.3015 9.34465L17.4997 8.74999C17.6689 8.24237 17.7535 7.98855 17.8657 7.77303C18.3134 6.91323 19.1418 6.31618 20.0991 6.16332C20.339 6.125 20.6066 6.125 21.1417 6.125H27.8576C28.3927 6.125 28.6604 6.125 28.9003 6.16332C29.8576 6.31618 30.6859 6.91323 31.1337 7.77303C31.246 7.98855 31.3305 8.24237 31.4997 8.74999L31.698 9.34465C31.7339 9.45275 31.7521 9.50704 31.7696 9.55565C32.3417 11.1371 33.8248 12.2061 35.5061 12.2487C35.5577 12.25 35.6147 12.25 35.7288 12.25" stroke="#797171" stroke-width="3.0625"/>
+                            </svg>
+                        </button>
+                    
+                            <tr>
+                              <th scope="row" class="text-center">Muzzarela</th>
+                              <td class="text-center" >Pizza</td>
+                              <td class="text-center">$2000</td>
+                              <td class="text-center">500</td>
+                              <td class="text-center">2000</td>
+                              <td class="text-center">gr</td>
+                              <td class="text-center">Optimo</td>
+                              <td class="text-center">Alta</td>
+          
+                              <td class="text-center" >
+          
+                                  <button type="button" class="btn IconModificar m-0" data-bs-toggle="modal" data-bs-target="#modalModif">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                          <path d="M29.3182 8.32694L31.2104 6.43456C34.3458 3.29916 39.4294 3.29916 42.5648 6.43456C45.7001 9.56995 45.7001 14.6534 42.5648 17.7888L40.6723 19.6812M29.3182 8.32694C29.3182 8.32694 29.5546 12.3483 33.1028 15.8965C36.6511 19.4447 40.6723 19.6812 40.6723 19.6812M29.3182 8.32694L11.9206 25.7245C10.7422 26.9029 10.153 27.4919 9.64634 28.1416C9.0486 28.908 8.53617 29.7372 8.11803 30.6145C7.76358 31.3583 7.5001 32.1488 6.97311 33.7296L4.74004 40.429M40.6723 19.6812L23.2749 37.0788C22.0964 38.257 21.5074 38.8463 20.8577 39.353C20.0913 39.9508 19.2622 40.4633 18.3848 40.8814C17.6411 41.2358 16.8506 41.4992 15.2697 42.0262L8.57043 44.2593M4.74004 40.429L4.19418 42.0666C3.93484 42.8445 4.13731 43.7022 4.71721 44.2822C5.2971 44.862 6.15485 45.0646 6.93285 44.8053L8.57043 44.2593M4.74004 40.429L8.57043 44.2593" stroke="black" stroke-width="1.5"/>
+                                        </svg>
+                                  </button>
+                                  <button type="button" class="btn IconEliminar"data-bs-toggle="modal" data-bs-target="#modalEliminar">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                      <path d="M41.854 12.25H7.14551" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                      <path d="M38.4507 17.3545L37.5115 31.4402C37.1502 36.8606 36.9695 39.5709 35.2034 41.223C33.4374 42.8753 30.7212 42.8753 25.2887 42.8753H23.7099C18.2773 42.8753 15.5611 42.8753 13.795 41.223C12.029 39.5709 11.8483 36.8606 11.4869 31.4402L10.5479 17.3545" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                      <path d="M19.3955 22.458L20.4163 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                      <path d="M29.6038 22.458L28.583 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                      <path d="M13.2705 12.25C13.3846 12.25 13.4416 12.25 13.4934 12.2487C15.1745 12.2061 16.6577 11.1371 17.2297 9.55565C17.2473 9.507 17.2654 9.4529 17.3015 9.34465L17.4997 8.74999C17.6689 8.24237 17.7535 7.98855 17.8657 7.77303C18.3134 6.91323 19.1418 6.31618 20.0991 6.16332C20.339 6.125 20.6066 6.125 21.1417 6.125H27.8576C28.3927 6.125 28.6604 6.125 28.9003 6.16332C29.8576 6.31618 30.6859 6.91323 31.1337 7.77303C31.246 7.98855 31.3305 8.24237 31.4997 8.74999L31.698 9.34465C31.7339 9.45275 31.7521 9.50704 31.7696 9.55565C32.3417 11.1371 33.8248 12.2061 35.5061 12.2487C35.5577 12.25 35.6147 12.25 35.7288 12.25" stroke="#797171" stroke-width="3.0625"/>
+                                      </svg>
+                                  </button>
+                                  
+                                    <tr>
+                                      <th scope="row" class="text-center">Mostaza</th>
+                                      <td class="text-center" >Condimentos</td>
+                                      <td class="text-center">$1800</td>
+                                      <td class="text-center">50</td>
+                                      <td class="text-center">200</td>
+                                      <td class="text-center">cm3</td>
+                                      <td class="text-center">Optimo</td>
+                                      <td class="text-center">Alta</td>
+                  
+                                      <td class="text-center" >
+                  
+                                          <button type="button" class="btn IconModificar m-0" data-bs-toggle="modal" data-bs-target="#modalModif">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                  <path d="M29.3182 8.32694L31.2104 6.43456C34.3458 3.29916 39.4294 3.29916 42.5648 6.43456C45.7001 9.56995 45.7001 14.6534 42.5648 17.7888L40.6723 19.6812M29.3182 8.32694C29.3182 8.32694 29.5546 12.3483 33.1028 15.8965C36.6511 19.4447 40.6723 19.6812 40.6723 19.6812M29.3182 8.32694L11.9206 25.7245C10.7422 26.9029 10.153 27.4919 9.64634 28.1416C9.0486 28.908 8.53617 29.7372 8.11803 30.6145C7.76358 31.3583 7.5001 32.1488 6.97311 33.7296L4.74004 40.429M40.6723 19.6812L23.2749 37.0788C22.0964 38.257 21.5074 38.8463 20.8577 39.353C20.0913 39.9508 19.2622 40.4633 18.3848 40.8814C17.6411 41.2358 16.8506 41.4992 15.2697 42.0262L8.57043 44.2593M4.74004 40.429L4.19418 42.0666C3.93484 42.8445 4.13731 43.7022 4.71721 44.2822C5.2971 44.862 6.15485 45.0646 6.93285 44.8053L8.57043 44.2593M4.74004 40.429L8.57043 44.2593" stroke="black" stroke-width="1.5"/>
+                                                </svg>
+                                          </button>
+                                          <button type="button" class="btn IconEliminar"data-bs-toggle="modal" data-bs-target="#modalEliminar">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                              <path d="M41.854 12.25H7.14551" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                              <path d="M38.4507 17.3545L37.5115 31.4402C37.1502 36.8606 36.9695 39.5709 35.2034 41.223C33.4374 42.8753 30.7212 42.8753 25.2887 42.8753H23.7099C18.2773 42.8753 15.5611 42.8753 13.795 41.223C12.029 39.5709 11.8483 36.8606 11.4869 31.4402L10.5479 17.3545" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                              <path d="M19.3955 22.458L20.4163 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                              <path d="M29.6038 22.458L28.583 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                              <path d="M13.2705 12.25C13.3846 12.25 13.4416 12.25 13.4934 12.2487C15.1745 12.2061 16.6577 11.1371 17.2297 9.55565C17.2473 9.507 17.2654 9.4529 17.3015 9.34465L17.4997 8.74999C17.6689 8.24237 17.7535 7.98855 17.8657 7.77303C18.3134 6.91323 19.1418 6.31618 20.0991 6.16332C20.339 6.125 20.6066 6.125 21.1417 6.125H27.8576C28.3927 6.125 28.6604 6.125 28.9003 6.16332C29.8576 6.31618 30.6859 6.91323 31.1337 7.77303C31.246 7.98855 31.3305 8.24237 31.4997 8.74999L31.698 9.34465C31.7339 9.45275 31.7521 9.50704 31.7696 9.55565C32.3417 11.1371 33.8248 12.2061 35.5061 12.2487C35.5577 12.25 35.6147 12.25 35.7288 12.25" stroke="#797171" stroke-width="3.0625"/>
+                                              </svg>
+                                          </button>
+                                          
+                                            <tr>
+                                              <th scope="row" class="text-center">Carne Molida</th>
+                                              <td class="text-center" >Hamburguesa</td>
+                                              <td class="text-center">$800</td>
+                                              <td class="text-center">500</td>
+                                              <td class="text-center">20000</td>
+                                              <td class="text-center">gr</td>
+                                              <td class="text-center">Optimo</td>
+                                              <td class="text-center">Alta</td>
+                          
+                                              <td class="text-center" >
+                          
+                                                  <button type="button" class="btn IconModificar m-0" data-bs-toggle="modal" data-bs-target="#modalModif">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                          <path d="M29.3182 8.32694L31.2104 6.43456C34.3458 3.29916 39.4294 3.29916 42.5648 6.43456C45.7001 9.56995 45.7001 14.6534 42.5648 17.7888L40.6723 19.6812M29.3182 8.32694C29.3182 8.32694 29.5546 12.3483 33.1028 15.8965C36.6511 19.4447 40.6723 19.6812 40.6723 19.6812M29.3182 8.32694L11.9206 25.7245C10.7422 26.9029 10.153 27.4919 9.64634 28.1416C9.0486 28.908 8.53617 29.7372 8.11803 30.6145C7.76358 31.3583 7.5001 32.1488 6.97311 33.7296L4.74004 40.429M40.6723 19.6812L23.2749 37.0788C22.0964 38.257 21.5074 38.8463 20.8577 39.353C20.0913 39.9508 19.2622 40.4633 18.3848 40.8814C17.6411 41.2358 16.8506 41.4992 15.2697 42.0262L8.57043 44.2593M4.74004 40.429L4.19418 42.0666C3.93484 42.8445 4.13731 43.7022 4.71721 44.2822C5.2971 44.862 6.15485 45.0646 6.93285 44.8053L8.57043 44.2593M4.74004 40.429L8.57043 44.2593" stroke="black" stroke-width="1.5"/>
+                                                        </svg>
+                                                  </button>
+                                                  <button type="button" class="btn IconEliminar"data-bs-toggle="modal" data-bs-target="#modalEliminar">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                      <path d="M41.854 12.25H7.14551" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                      <path d="M38.4507 17.3545L37.5115 31.4402C37.1502 36.8606 36.9695 39.5709 35.2034 41.223C33.4374 42.8753 30.7212 42.8753 25.2887 42.8753H23.7099C18.2773 42.8753 15.5611 42.8753 13.795 41.223C12.029 39.5709 11.8483 36.8606 11.4869 31.4402L10.5479 17.3545" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                      <path d="M19.3955 22.458L20.4163 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                      <path d="M29.6038 22.458L28.583 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                      <path d="M13.2705 12.25C13.3846 12.25 13.4416 12.25 13.4934 12.2487C15.1745 12.2061 16.6577 11.1371 17.2297 9.55565C17.2473 9.507 17.2654 9.4529 17.3015 9.34465L17.4997 8.74999C17.6689 8.24237 17.7535 7.98855 17.8657 7.77303C18.3134 6.91323 19.1418 6.31618 20.0991 6.16332C20.339 6.125 20.6066 6.125 21.1417 6.125H27.8576C28.3927 6.125 28.6604 6.125 28.9003 6.16332C29.8576 6.31618 30.6859 6.91323 31.1337 7.77303C31.246 7.98855 31.3305 8.24237 31.4997 8.74999L31.698 9.34465C31.7339 9.45275 31.7521 9.50704 31.7696 9.55565C32.3417 11.1371 33.8248 12.2061 35.5061 12.2487C35.5577 12.25 35.6147 12.25 35.7288 12.25" stroke="#797171" stroke-width="3.0625"/>
+                                                      </svg>
+                                                  </button>
+                                                  <tr class="table-warning">
+                                                    <th scope="row" class="text-center">Salchicha</th>
+                                                    <td class="text-center" >Panchos</td>
+                                                    <td class="text-center">$2000</td>
+                                                    <td class="text-center">50</td>
+                                                    <td class="text-center">45</td>
+                                                    <td class="text-center">gr</td>
+                                                    <td class="text-center">Faltante</td>
+                                                    <td class="text-center">Baja</td>
+                                
+                                                    <td class="text-center" >
+                                
+                                                        <button type="button" class="btn IconModificar m-0" data-bs-toggle="modal" data-bs-target="#modalModif">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                                <path d="M29.3182 8.32694L31.2104 6.43456C34.3458 3.29916 39.4294 3.29916 42.5648 6.43456C45.7001 9.56995 45.7001 14.6534 42.5648 17.7888L40.6723 19.6812M29.3182 8.32694C29.3182 8.32694 29.5546 12.3483 33.1028 15.8965C36.6511 19.4447 40.6723 19.6812 40.6723 19.6812M29.3182 8.32694L11.9206 25.7245C10.7422 26.9029 10.153 27.4919 9.64634 28.1416C9.0486 28.908 8.53617 29.7372 8.11803 30.6145C7.76358 31.3583 7.5001 32.1488 6.97311 33.7296L4.74004 40.429M40.6723 19.6812L23.2749 37.0788C22.0964 38.257 21.5074 38.8463 20.8577 39.353C20.0913 39.9508 19.2622 40.4633 18.3848 40.8814C17.6411 41.2358 16.8506 41.4992 15.2697 42.0262L8.57043 44.2593M4.74004 40.429L4.19418 42.0666C3.93484 42.8445 4.13731 43.7022 4.71721 44.2822C5.2971 44.862 6.15485 45.0646 6.93285 44.8053L8.57043 44.2593M4.74004 40.429L8.57043 44.2593" stroke="black" stroke-width="1.5"/>
+                                                              </svg>
+                                                        </button>
+                                                        <button type="button" class="btn IconEliminar"data-bs-toggle="modal" data-bs-target="#modalEliminar">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                            <path d="M41.854 12.25H7.14551" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                            <path d="M38.4507 17.3545L37.5115 31.4402C37.1502 36.8606 36.9695 39.5709 35.2034 41.223C33.4374 42.8753 30.7212 42.8753 25.2887 42.8753H23.7099C18.2773 42.8753 15.5611 42.8753 13.795 41.223C12.029 39.5709 11.8483 36.8606 11.4869 31.4402L10.5479 17.3545" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                            <path d="M19.3955 22.458L20.4163 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                            <path d="M29.6038 22.458L28.583 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                            <path d="M13.2705 12.25C13.3846 12.25 13.4416 12.25 13.4934 12.2487C15.1745 12.2061 16.6577 11.1371 17.2297 9.55565C17.2473 9.507 17.2654 9.4529 17.3015 9.34465L17.4997 8.74999C17.6689 8.24237 17.7535 7.98855 17.8657 7.77303C18.3134 6.91323 19.1418 6.31618 20.0991 6.16332C20.339 6.125 20.6066 6.125 21.1417 6.125H27.8576C28.3927 6.125 28.6604 6.125 28.9003 6.16332C29.8576 6.31618 30.6859 6.91323 31.1337 7.77303C31.246 7.98855 31.3305 8.24237 31.4997 8.74999L31.698 9.34465C31.7339 9.45275 31.7521 9.50704 31.7696 9.55565C32.3417 11.1371 33.8248 12.2061 35.5061 12.2487C35.5577 12.25 35.6147 12.25 35.7288 12.25" stroke="#797171" stroke-width="3.0625"/>
+                                                            </svg>
+                                                        </button>
+                                
+                                                            <tr>
+                                                              <th scope="row" class="text-center">Cebolla </th>
+                                                              <td class="text-center" >Hamburguesa</td>
+                                                              <td class="text-center">$400</td>
+                                                              <td class="text-center">50</td>
+                                                              <td class="text-center">150</td>
+                                                              <td class="text-center">gr</td>
+                                                              <td class="text-center">Optimo</td>
+                                                              <td class="text-center">Alta</td>
+                                          
+                                                              <td class="text-center" >
+                                          
+                                                                  <button type="button" class="btn IconModificar m-0" data-bs-toggle="modal" data-bs-target="#modalModif">
+                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                                          <path d="M29.3182 8.32694L31.2104 6.43456C34.3458 3.29916 39.4294 3.29916 42.5648 6.43456C45.7001 9.56995 45.7001 14.6534 42.5648 17.7888L40.6723 19.6812M29.3182 8.32694C29.3182 8.32694 29.5546 12.3483 33.1028 15.8965C36.6511 19.4447 40.6723 19.6812 40.6723 19.6812M29.3182 8.32694L11.9206 25.7245C10.7422 26.9029 10.153 27.4919 9.64634 28.1416C9.0486 28.908 8.53617 29.7372 8.11803 30.6145C7.76358 31.3583 7.5001 32.1488 6.97311 33.7296L4.74004 40.429M40.6723 19.6812L23.2749 37.0788C22.0964 38.257 21.5074 38.8463 20.8577 39.353C20.0913 39.9508 19.2622 40.4633 18.3848 40.8814C17.6411 41.2358 16.8506 41.4992 15.2697 42.0262L8.57043 44.2593M4.74004 40.429L4.19418 42.0666C3.93484 42.8445 4.13731 43.7022 4.71721 44.2822C5.2971 44.862 6.15485 45.0646 6.93285 44.8053L8.57043 44.2593M4.74004 40.429L8.57043 44.2593" stroke="black" stroke-width="1.5"/>
+                                                                        </svg>
+                                                                  </button>
+                                                                  <button type="button" class="btn IconEliminar"data-bs-toggle="modal" data-bs-target="#modalEliminar">
+                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                                      <path d="M41.854 12.25H7.14551" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                      <path d="M38.4507 17.3545L37.5115 31.4402C37.1502 36.8606 36.9695 39.5709 35.2034 41.223C33.4374 42.8753 30.7212 42.8753 25.2887 42.8753H23.7099C18.2773 42.8753 15.5611 42.8753 13.795 41.223C12.029 39.5709 11.8483 36.8606 11.4869 31.4402L10.5479 17.3545" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                      <path d="M19.3955 22.458L20.4163 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                      <path d="M29.6038 22.458L28.583 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                      <path d="M13.2705 12.25C13.3846 12.25 13.4416 12.25 13.4934 12.2487C15.1745 12.2061 16.6577 11.1371 17.2297 9.55565C17.2473 9.507 17.2654 9.4529 17.3015 9.34465L17.4997 8.74999C17.6689 8.24237 17.7535 7.98855 17.8657 7.77303C18.3134 6.91323 19.1418 6.31618 20.0991 6.16332C20.339 6.125 20.6066 6.125 21.1417 6.125H27.8576C28.3927 6.125 28.6604 6.125 28.9003 6.16332C29.8576 6.31618 30.6859 6.91323 31.1337 7.77303C31.246 7.98855 31.3305 8.24237 31.4997 8.74999L31.698 9.34465C31.7339 9.45275 31.7521 9.50704 31.7696 9.55565C32.3417 11.1371 33.8248 12.2061 35.5061 12.2487C35.5577 12.25 35.6147 12.25 35.7288 12.25" stroke="#797171" stroke-width="3.0625"/>
+                                                                      </svg>
+                                                                  </button>
+                                                        
+                                                                    <tr>
+                                                                      <th scope="row" class="text-center">Ketchup</th>
+                                                                      <td class="text-center" >Condimentos</td>
+                                                                      <td class="text-center">$1800</td>
+                                                                      <td class="text-center">50</td>
+                                                                      <td class="text-center">200</td>
+                                                                      <td class="text-center">cm3</td>
+                                                                      <td class="text-center">Optimo</td>
+                                                                      <td class="text-center">Alta</td>
+                                                  
+                                                                      <td class="text-center" >
+                                                  
+                                                                          <button type="button" class="btn IconModificar m-0" data-bs-toggle="modal" data-bs-target="#modalModif">
+                                                                              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                                                  <path d="M29.3182 8.32694L31.2104 6.43456C34.3458 3.29916 39.4294 3.29916 42.5648 6.43456C45.7001 9.56995 45.7001 14.6534 42.5648 17.7888L40.6723 19.6812M29.3182 8.32694C29.3182 8.32694 29.5546 12.3483 33.1028 15.8965C36.6511 19.4447 40.6723 19.6812 40.6723 19.6812M29.3182 8.32694L11.9206 25.7245C10.7422 26.9029 10.153 27.4919 9.64634 28.1416C9.0486 28.908 8.53617 29.7372 8.11803 30.6145C7.76358 31.3583 7.5001 32.1488 6.97311 33.7296L4.74004 40.429M40.6723 19.6812L23.2749 37.0788C22.0964 38.257 21.5074 38.8463 20.8577 39.353C20.0913 39.9508 19.2622 40.4633 18.3848 40.8814C17.6411 41.2358 16.8506 41.4992 15.2697 42.0262L8.57043 44.2593M4.74004 40.429L4.19418 42.0666C3.93484 42.8445 4.13731 43.7022 4.71721 44.2822C5.2971 44.862 6.15485 45.0646 6.93285 44.8053L8.57043 44.2593M4.74004 40.429L8.57043 44.2593" stroke="black" stroke-width="1.5"/>
+                                                                                </svg>
+                                                                          </button>
+                                                                          <button type="button" class="btn IconEliminar"data-bs-toggle="modal" data-bs-target="#modalEliminar">
+                                                                              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 49 49" fill="none">
+                                                                              <path d="M41.854 12.25H7.14551" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                              <path d="M38.4507 17.3545L37.5115 31.4402C37.1502 36.8606 36.9695 39.5709 35.2034 41.223C33.4374 42.8753 30.7212 42.8753 25.2887 42.8753H23.7099C18.2773 42.8753 15.5611 42.8753 13.795 41.223C12.029 39.5709 11.8483 36.8606 11.4869 31.4402L10.5479 17.3545" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                              <path d="M19.3955 22.458L20.4163 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                              <path d="M29.6038 22.458L28.583 32.6663" stroke="#797171" stroke-width="3.0625" stroke-linecap="round"/>
+                                                                              <path d="M13.2705 12.25C13.3846 12.25 13.4416 12.25 13.4934 12.2487C15.1745 12.2061 16.6577 11.1371 17.2297 9.55565C17.2473 9.507 17.2654 9.4529 17.3015 9.34465L17.4997 8.74999C17.6689 8.24237 17.7535 7.98855 17.8657 7.77303C18.3134 6.91323 19.1418 6.31618 20.0991 6.16332C20.339 6.125 20.6066 6.125 21.1417 6.125H27.8576C28.3927 6.125 28.6604 6.125 28.9003 6.16332C29.8576 6.31618 30.6859 6.91323 31.1337 7.77303C31.246 7.98855 31.3305 8.24237 31.4997 8.74999L31.698 9.34465C31.7339 9.45275 31.7521 9.50704 31.7696 9.55565C32.3417 11.1371 33.8248 12.2061 35.5061 12.2487C35.5577 12.25 35.6147 12.25 35.7288 12.25" stroke="#797171" stroke-width="3.0625"/>
+                                                                              </svg>
+                                                                          </button>
+         <!-- Modal Modificar lapicito -->
+             <div class="modal fade" id="modalModif" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                 <div class="modal-dialog modal-lg">
+                   <div class="modal-content">
+                         <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="staticBackdropLabel">Editar Nuevo/s Ingrediente/s</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="modal-body fw-bold">
+                                        <div class="mb-3">
+                                            <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tomate">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formGroupExampleInput2" class="form-label">Stock Minimo</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="3">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formGroupExampleInput2" class="form-label">Precio costo</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="$150">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formGroupExampleInput2" class="form-label">Estado Alta / Baja</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Alta / Baja">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                   <div class="modal-body fw-bold">
+                                       <div class="mb-3">
+                                             <label for="formGroupExampleInput" class="form-label">Rubro</label>
+                                             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Vegetales">
+                                       </div>
+                                       <div class="mb-3">
+                                             <label for="formGroupExampleInput2" class="form-label">Stock actual</label>
+                                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="6">
+                                        </div>
+                                        <div class="mb-3">
+                                             <label for="formGroupExampleInput2" class="form-label">Unidad de medida</label>
+                                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="cm3">
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                                        
+                            <div class="row mx-3">
+                                <div class="col-12 modal-footer d-flex justify-content-between ">
+                                    <button type="button" class="btncancelar" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btnguardar"data-bs-dismiss="modal">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                  </div> 
+            </div>  
+      </div>
+                    
+      <!-- Modal Eliminar -->
+        <div class="modal fade" id="modalEliminar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="staticBackdropLabel">Eliminar Rubro</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                         <p>¿Desea eliminar el ingrediente seleccionado?</p>
+                        </div>
+                                    
+                    <div class="row mx-3">
+                        <div class="col-12 modal-footer d-flex justify-content-between ">
+                             <button type="button" class="btncancelar" data-bs-dismiss="modal">Cancelar</button>
+                             <button type="button" class="btnguardar"data-bs-dismiss="modal">Confirmar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+             </div>  
+        </div>
+       </td>
+      </tbody>
+    </table>
+   </div>
+</section>
+
+    <!-- footer-->
+    <footer class="footer py-3" >
+        <div class="container">
+          <nav class="row row-cols-1">
+            <!-- Redes-->
+            <ul class="col-4 list-unstyled my-4">
+              <li class="justify-content-between">
+                <!-- facebook-->
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Facebook" data-bs-trigger="hover focus">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                      <g clip-path="url(#clip0_173_646)">
+                        <path d="M25.1852 0.484375C11.2743 0.484375 0 11.7587 0 25.6696C0 39.5805 11.2743 50.8548 25.1852 50.8548C39.0961 50.8548 50.3704 39.5805 50.3704 25.6696C50.3704 11.7587 39.0961 0.484375 25.1852 0.484375ZM30.7437 21.3999L30.4584 25.1678H26.592V38.2523H21.7124V25.1678H19.1053V21.3999H21.7124V18.8715C21.7124 17.7598 21.7419 16.0382 22.5486 14.9659C23.4045 13.8345 24.5752 13.0671 26.592 13.0671C29.8779 13.0671 31.2552 13.5394 31.2552 13.5394L30.6059 17.3958C30.6059 17.3958 29.5237 17.081 28.5104 17.081C27.4971 17.081 26.592 17.445 26.592 18.4583V21.3999H30.7437Z" fill="white"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_173_646">
+                          <rect width="50.3704" height="50.3704" fill="white" transform="translate(0 0.484375)"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </span>
+                <!-- Instagram-->
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Instagram" data-bs-trigger="hover focus">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewBox="0 0 52 51" fill="none">
+                      <path d="M26.0097 30.0985C28.4495 30.0985 30.4466 28.1112 30.4466 25.6615C30.4466 24.6974 30.1318 23.8022 29.6104 23.0741C28.8037 21.9625 27.4952 21.2246 26.0195 21.2246C24.5438 21.2246 23.2354 21.9526 22.4287 23.0741C21.9073 23.8022 21.5924 24.6974 21.5924 25.6615C21.5826 28.1112 23.5699 30.0985 26.0097 30.0985Z" fill="white"/>
+                      <path d="M35.6902 20.2506V16.5319V15.981H35.1393L31.4205 15.9908L31.4402 20.2605L35.6902 20.2506Z" fill="white"/>
+                      <path d="M32.8963 25.6714C32.8963 29.4688 29.8072 32.5579 26.0097 32.5579C22.2122 32.5579 19.1231 29.4688 19.1231 25.6714C19.1231 24.7564 19.31 23.8809 19.6347 23.084H15.8766V33.3942C15.8766 34.7223 16.9588 35.8045 18.2869 35.8045H33.7325C35.0606 35.8045 36.1428 34.7223 36.1428 33.3942V23.084H32.3847C32.7192 23.8809 32.8963 24.7564 32.8963 25.6714Z" fill="white"/>
+                      <path d="M26.0097 0.486328C12.0988 0.486328 0.824463 11.7606 0.824463 25.6715C0.824463 39.5824 12.0988 50.8567 26.0097 50.8567C39.9206 50.8567 51.1949 39.5824 51.1949 25.6715C51.1949 11.7606 39.9206 0.486328 26.0097 0.486328ZM38.6023 23.0841V33.3943C38.6023 36.0801 36.4182 38.2641 33.7325 38.2641H18.2869C15.6011 38.2641 13.4171 36.0801 13.4171 33.3943V23.0841V17.9389C13.4171 15.2531 15.6011 13.0691 18.2869 13.0691H33.7325C36.4182 13.0691 38.6023 15.2531 38.6023 17.9389V23.0841Z" fill="white"/>
+                    </svg>
+                  </a>
+                </span>
+                  <!-- WhatsApp-->
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="WhatsApp" data-bs-trigger="hover focus">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 35 35" fill="none" style="border-radius: 100%;">
+                      <g clip-path="url(#clip0_685_116)">
+                        <path d="M17.6626 7.90479C12.2927 7.90479 7.92395 12.2735 7.92395 17.6434C7.92395 19.5145 8.45573 21.3315 9.46167 22.8979L9.70343 23.2744L8.75622 26.6387L12.2369 25.7427L12.5959 25.9619C14.1178 26.891 15.8699 27.3821 17.6626 27.3821C23.0325 27.3821 27.4012 23.0133 27.4012 17.6434C27.4012 12.2735 23.0325 7.90479 17.6626 7.90479ZM23.6344 20.6366L23.5129 21.2041C23.3759 21.8444 22.9956 22.4108 22.4439 22.7637C21.7474 23.2093 20.8445 23.428 19.6969 23.1035C16.1356 22.0965 14.1215 19.7386 13.0408 18.2649C11.9601 16.7912 11.5426 15.3175 11.8127 14.114C11.9939 13.3069 12.5838 12.6876 12.9528 12.3671C13.1335 12.2102 13.368 12.1303 13.6069 12.1433L14.3679 12.1848C14.5178 12.193 14.65 12.2855 14.709 12.4236L15.8176 15.0173C15.8769 15.1559 15.8519 15.3161 15.7534 15.4301L14.7884 16.5464C14.7101 16.6369 14.6965 16.7659 14.7516 16.872C16.0225 19.3201 18.3387 20.2902 19.0302 20.5332C19.148 20.5746 19.2786 20.5355 19.3549 20.4365L20.3646 19.1276C20.4769 18.982 20.6749 18.9334 20.8419 19.0104L23.4138 20.1959C23.5814 20.2732 23.673 20.4562 23.6344 20.6366Z" fill="white"/>
+                        <path d="M0.8573 0.881348V34.4616H34.4376V0.881348H0.8573ZM17.6626 29.3718C15.6475 29.3718 13.6744 28.856 11.9289 27.8766L5.90424 29.4274L7.5491 23.5854C6.49136 21.7885 5.93445 19.744 5.93445 17.6437C5.93445 11.1768 11.1957 5.91554 17.6626 5.91554C24.1295 5.91554 29.3906 11.1768 29.3906 17.6437C29.3906 24.1106 24.1295 29.3718 17.6626 29.3718Z" fill="white"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_685_116">
+                          <rect width="33.5803" height="33.5803" fill="white" transform="translate(0.8573 0.881348)"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </span>
+                <!-- email -->
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email" data-bs-trigger="hover focus">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M47.1125 23.6702C47.1125 36.5492 36.6718 46.9899 23.7929 46.9899C10.9138 46.9899 0.473267 36.5492 0.473267 23.6702C0.473267 10.7911 10.9138 0.350586 23.7929 0.350586C36.6718 0.350586 47.1125 10.7911 47.1125 23.6702ZM34.4558 17.5722C35.0539 17.9394 35.4422 18.6005 35.4422 19.3561L35.4527 29.8499C35.4527 31.0043 34.5082 31.9487 33.3539 31.9487H16.5638C15.4095 31.9487 14.465 31.0043 14.465 29.8499V19.3561C14.465 18.6005 14.8638 17.9394 15.4619 17.5722L24.9589 12.0104L34.4558 17.5722ZM33.3434 19.3666V19.3561L24.9589 14.445L16.5638 19.3561L24.9589 24.603L33.3434 19.3666ZM16.5638 29.8499V21.8117L24.9589 27.0796L33.3434 21.8431L33.3539 29.8499H16.5638Z" fill="white"/>
+                    </svg>
+                  </a>
+                </span>
+                <!--Ubicacion-->
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Ubicación" data-bs-trigger="hover focus">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                    <ellipse cx="25.1852" cy="25.6686" rx="25.1852" ry="25.1852" fill="white"/>
+                    <path d="M22.2882 37.0807C20.9618 35.7093 19.0743 33.5218 17.5716 30.8629L16.701 31.3549L17.5716 30.8628C15.8476 27.8122 15 24.8272 15 21.9834C15 16.7459 19.2626 12.4834 24.5001 12.4834C29.7375 12.4834 34 16.7459 34 21.9833C34 24.8272 33.1524 27.8122 31.4284 30.8628C29.9257 33.5217 28.0381 35.7093 26.7118 37.0807L26.7118 37.0807C26.1256 37.6868 25.3443 38.018 24.5 38.018C23.6557 38.018 22.8744 37.6868 22.2882 37.0807ZM22.2882 37.0807L21.5694 37.7759L22.2882 37.0807ZM19.4593 21.9834C19.4593 24.7637 21.7197 27.0241 24.5001 27.0241C27.2804 27.0241 29.5408 24.7637 29.5408 21.9834C29.5408 19.2031 27.2804 16.9427 24.5001 16.9427C21.7197 16.9427 19.4593 19.2031 19.4593 21.9834Z" stroke="#CF5C36" stroke-width="2"/>
+                  </svg>
+                </a>
+              </span>
+              </li>
+            </ul>
+            <!-- Logo-->
+            <a href="#" class="col-4 d-flex justify-content-center">
+              <img src="Componentes/logoFooter.svg" alt="" srcset="">
+            </a>
+            <!-- MetodosPago-->
+            <ul class="col-4 list-unstyled d-flex align-items-center flex-column g-3">
+              <li class="text-white"> Métodos de pago</li>
+              <li class="py-2">
+                <img src="Componentes/MetodoPago1.svg" alt="Tarjeta Mastercad">
+                <img src="Componentes/metodoPago2.svg" alt="paypal">
+                <img src="Componentes/MetodoPago3.svg" alt="mercadoPago">
+              </li>
+              <li>
+                <img src="Componentes/copyright.png" alt="" srcset="">
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script> popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+            }) 
+    </script>
+</body>
+</html>
