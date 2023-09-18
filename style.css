@@ -489,3 +489,8 @@ header #LogoNavPrincipal{
   font-size: 14px;
   margin: -2px 0px;
 }
+
+.form {
+  border-radius: 5px;
+  border-color: #ced4da;
+}
