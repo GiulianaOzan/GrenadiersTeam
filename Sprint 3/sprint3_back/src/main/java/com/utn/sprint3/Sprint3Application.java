@@ -59,24 +59,57 @@ public class Sprint3Application {
 		return args -> {
 			System.out.println("ESTOY----FUNCIONANDO");
 
+			//configuracion fecha
+			SimpleDateFormat formatoFecha = new SimpleDateFormat ("yyyy-MM-dd");
+			String fechaString = "2023-09-09";
+			// Parsear la cadena en un objeto Date
+			Date fecha = formatoFecha.parse(fechaString);
+
 			//CREAR INSTANCIA DE RUBRO ----------------------------------------------------
 
-			RubroArticulo rubro1 = RubroArticulo.builder()
+			RubroArticulo rubro0 = RubroArticulo.builder()
 					.denominacion("Insumos")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
+			RubroArticulo rubro1 = RubroArticulo.builder()
+					.denominacion("Insumos hijos")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
+					.rubroPadre(rubro0)
+					.build();
+
+			RubroArticulo rubro2 = RubroArticulo.builder()
+					.denominacion("Insumos hijos hijos")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
+					.rubroPadre(rubro0)
+					.build();
+
+			rubroArticuloRepository.save(rubro0);
 			rubroArticuloRepository.save(rubro1);
+			rubroArticuloRepository.save(rubro2);
 
 			//CREAR UNIDAD DE MEDIDA -------------------------------------------------------
 
 			UnidadMedida unidadMedida1 = UnidadMedida.builder()
 					.abreviatura("Kg")
 					.denominacion("Insumos")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			UnidadMedida unidadMedida2 = UnidadMedida.builder()
 					.abreviatura("cm3")
 					.denominacion("Insumos")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			unidadMedidaRepository.save(unidadMedida1);
@@ -91,6 +124,9 @@ public class Sprint3Application {
 					.stockMinimo(8)
 					.stockActual(15)
 					.urlImagen("Harina.jpg")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 			ArticuloInsumo articuloInsumo2 = ArticuloInsumo.builder()
 					.denominacion("Queso cheddar")
@@ -98,14 +134,17 @@ public class Sprint3Application {
 					.stockMinimo(5)
 					.stockActual(50)
 					.urlImagen("Cheddar.jpg")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 
 
 			//Vinculamos el rubro a los articulos ------------------------------------------
 
-			articuloInsumo1.setRubroArticulo(rubro1);
-			articuloInsumo2.setRubroArticulo(rubro1);
+			articuloInsumo1.setRubroArticulo(rubro0);
+			articuloInsumo2.setRubroArticulo(rubro0);
 
 			articuloInsumoRepository.save(articuloInsumo1);
 			articuloInsumoRepository.save(articuloInsumo2);
@@ -123,8 +162,12 @@ public class Sprint3Application {
 			RubroGeneral rubroGeneral1 = RubroGeneral.builder()
 					.denominacion("Manufacturados")
 					.build();
+			RubroGeneral rubroGeneral2 = RubroGeneral.builder()
+					.denominacion("Insumos")
+					.build();
 
 			rubroGeneralRepository.save(rubroGeneral1);
+			rubroGeneralRepository.save(rubroGeneral2);
 
 			//CREAR DETALLE ART MANUFACTURADO ----------------------------------------------
 
@@ -148,6 +191,9 @@ public class Sprint3Application {
 					.precioVenta(600)
 					.tiempoEstimadoCocina(15)
 					.urlImagen("Prepiza.jpg")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			ArticuloManufacturado articuloManufacturado2 = ArticuloManufacturado.builder()
@@ -157,6 +203,9 @@ public class Sprint3Application {
 					.precioVenta(400)
 					.tiempoEstimadoCocina(15)
 					.urlImagen("Panpapa.jpg")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 
@@ -189,6 +238,9 @@ public class Sprint3Application {
 					.apellido("Messi")
 					.email("leomessi10@gmail.com")
 					.telefono("261605548")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			Cliente cliente2 = Cliente.builder()
@@ -196,6 +248,9 @@ public class Sprint3Application {
 					.apellido("Gomez")
 					.email("arnaldo10@gmail.com")
 					.telefono("261568548")
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			clienteRepository.save(cliente1);
@@ -211,6 +266,9 @@ public class Sprint3Application {
 					.pisoDpto(5)
 					.numero(22)
 					.numeroDpto(3)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			Domicilio domicilio2 = Domicilio.builder()
@@ -220,6 +278,9 @@ public class Sprint3Application {
 					.pisoDpto(7)
 					.numero(26)
 					.numeroDpto(9)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			domicilioRepository.save(domicilio1);
@@ -231,11 +292,17 @@ public class Sprint3Application {
 					.auth0Id("User01")
 					.username("Unknow15")
 					.rol(Rol.Cajero)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 			Usuario usuario2 = Usuario.builder()
 					.auth0Id("User02")
 					.username("Unknow88")
 					.rol(Rol.Cliente)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
 					.build();
 
 			usuarioRepository.save(usuario1);
@@ -282,6 +349,11 @@ public class Sprint3Application {
 					.tipoEnvio(TipoEnvio.TakeAway)
 					.total(600)
 					.totalCosto(900)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
+					.fechaPedido(fecha)
+					.horaEstimadaFinalizacion(fecha)
 					.build();
 
 			Pedido pedido2 = Pedido.builder()
@@ -290,6 +362,11 @@ public class Sprint3Application {
 					.tipoEnvio(TipoEnvio.Delivery)
 					.total(800)
 					.totalCosto(1000)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
+					.fechaPedido(fecha)
+					.horaEstimadaFinalizacion(fecha)
 					.build();
 
 
@@ -315,6 +392,8 @@ public class Sprint3Application {
 					.identificadorPago(8)
 					.nroTarjeta("0880-989")
 					.metodoPago("Bancario")
+					.fechaAprobacion(fecha)
+					.fechaCreacion(fecha)
 					.build();
 			MercadoPagoDatos mercadoPagoDatos2 = MercadoPagoDatos.builder()
 					.estado("En transanccion")
@@ -322,6 +401,8 @@ public class Sprint3Application {
 					.identificadorPago(9)
 					.nroTarjeta("0880-555")
 					.metodoPago("Retiro en vantana")
+					.fechaCreacion(fecha)
+					.fechaAprobacion(fecha)
 					.build();
 
 			mercadoPagoDatosRepository.save(mercadoPagoDatos1);
@@ -367,6 +448,10 @@ public class Sprint3Application {
 					.mpPreferenceId("MP568")
 					.mpPaymentType("MP999")
 					.totalVenta(8000)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
+					.fechaFacturacion(fecha)
 					.build();
 
 			Factura factura2 = Factura.builder()
@@ -376,6 +461,10 @@ public class Sprint3Application {
 					.mpPreferenceId("MP998")
 					.mpPaymentType("MP785")
 					.totalVenta(10000)
+					.fechaAlta(fecha)
+					.fechaBaja(fecha)
+					.fechaModificacion(fecha)
+					.fechaFacturacion(fecha)
 					.build();
 
 			//VINCULAR FACTURA CON DETALLE FACTURA
@@ -423,11 +512,7 @@ public class Sprint3Application {
 			detalleArticuloManufacturado2.setArticuloInsumo(articuloInsumo2);
 
 
-			/*//configuracion fecha
-			SimpleDateFormat formatoFecha = new SimpleDateFormat ("yyyy-MM-dd");
-			String fechaString = "2023-09-09";
-			// Parsear la cadena en un objeto Date
-			Date fecha = formatoFecha.parse(fechaString);*/
+
 		};
 	}
 }

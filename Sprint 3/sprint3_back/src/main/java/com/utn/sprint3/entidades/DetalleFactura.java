@@ -31,9 +31,5 @@ public class DetalleFactura extends BaseEntidad{
     @JoinColumn(name = "id_articulo_manufacturado")
     private ArticuloManufacturado articuloManufacturado;
 
-   /* @NotNull
-    @ManyToOne()
-    @JoinColumn(name = "id_factura")
-    private Factura factura; NO IRIA ACA POR Q CAMBIO LA NAVEGABILIDAD */
 
 }

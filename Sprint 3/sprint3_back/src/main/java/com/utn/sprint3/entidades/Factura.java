@@ -22,7 +22,7 @@ public class Factura extends BaseEntidad{
 
     @NotNull
     @Column(name = "fecha_facturacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaFacturacion;
 
     @Column(name = "mp_payment_id")
@@ -46,21 +46,17 @@ public class Factura extends BaseEntidad{
 
     @NotNull
     @Column(name = "fecha_alta")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaAlta;
 
     @Column(name = "fecha_modificacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaModificacion;
 
     @Column(name = "fecha_baja")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaBaja;
 
-    /*@NotNull
-    @OneToOne
-    @JoinColumn(name = "id_pedido")
-    private Pedido pedido; CAMBIA LA NAVEGABILIDAD*/
 
     @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true,fetch = FetchType.EAGER)
     @JoinColumn(name = "id_factura")

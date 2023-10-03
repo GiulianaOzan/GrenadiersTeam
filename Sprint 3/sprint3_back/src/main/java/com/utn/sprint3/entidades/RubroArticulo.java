@@ -29,24 +29,15 @@ public class RubroArticulo extends BaseEntidad {
 
     @NotNull
     @Column(name = "fecha_alta")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaAlta;
 
     @Column(name = "fecha_modificacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaModificacion;
 
     @Column(name = "fecha_baja")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaBaja;
 
-    public RubroArticulo(String denominacion, RubroArticulo rubroPadre) {
-        this.denominacion = denominacion;
-        this.rubroPadre = rubroPadre;
-    }
-
-    public void setSubRubros(List<RubroArticulo> subRubros) {
-        this.subRubros.clear();
-        this.subRubros.addAll(subRubros);
-    }
 }

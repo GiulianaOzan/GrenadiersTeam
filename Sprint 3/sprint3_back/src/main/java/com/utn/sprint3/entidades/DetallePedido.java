@@ -35,9 +35,5 @@ public class DetallePedido extends BaseEntidad{
     @JoinColumn(name = "id_articulo_manufacturado")
     private ArticuloManufacturado articuloManufacturado;
 
-   /* @NotNull
-    @ManyToOne()
-    @JoinColumn(name = "id_pedido")
-    private Pedido pedido; NO IRIA PORQ CAMBIA LA NAVEGABILIDAD */
 
 }

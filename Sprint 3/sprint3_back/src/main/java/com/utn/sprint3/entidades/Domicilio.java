@@ -37,22 +37,17 @@ public class Domicilio extends BaseEntidad{
     @Column(name = "piso_vivienda")
     private int pisoDpto;
 
-   /* @NotNull
-    @ManyToOne()
-    @JoinColumn(name = "id_cliente")
-    private Cliente cliente; NO IRIA POR QUE CAMBIA LA NAVEGABILIDAD*/
-
     @NotNull
     @Column(name = "fecha_alta")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaAlta;
 
     @Column(name = "fecha_modificacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaModificacion;
 
     @Column(name = "fecha_baja")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaBaja;
 
 }

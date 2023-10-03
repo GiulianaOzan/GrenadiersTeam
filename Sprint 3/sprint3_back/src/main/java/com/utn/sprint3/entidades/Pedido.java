@@ -24,7 +24,7 @@ public class Pedido extends BaseEntidad{
 
     @NotNull
     @Column(name = "fecha_pedido")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaPedido;
 
     @NotNull
@@ -78,15 +78,15 @@ public class Pedido extends BaseEntidad{
 
     @NotNull
     @Column(name = "fecha_alta")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaAlta;
 
     @Column(name = "fecha_modificacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaModificacion;
 
     @Column(name = "fecha_baja")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaBaja;
 
 

@@ -29,11 +29,11 @@ public class MercadoPagoDatos extends BaseEntidad{
 
     @NotNull
     @Column(name = "fecha_aprobacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaAprobacion;
 
     @Column(name = "fecha_creacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaCreacion;
 
 

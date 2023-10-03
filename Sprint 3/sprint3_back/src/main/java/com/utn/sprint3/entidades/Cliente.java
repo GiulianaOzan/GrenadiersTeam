@@ -2,6 +2,7 @@ package com.utn.sprint3.entidades;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.Date;
 
@@ -31,16 +32,17 @@ public class Cliente extends BaseEntidad{
     @JoinColumn(name = "id_domicilio")
     private Domicilio domicilio;
 
+    @NotNull
     @Column(name = "fecha_alta")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaAlta;
 
     @Column(name = "fecha_modificacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaModificacion;
 
     @Column(name = "fecha_baja")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaBaja;
 
 }

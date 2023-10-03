@@ -29,7 +29,7 @@ public class ArticuloInsumo extends BaseEntidad {
 
     @NotNull
     @Column(name = "stock_actual")
-    private double stockActual;
+    private int stockActual;
 
     @NotNull
     @Column(name = "stock_minimo")
@@ -47,15 +47,16 @@ public class ArticuloInsumo extends BaseEntidad {
 
     @NotNull
     @Column(name = "fecha_alta")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaAlta;
 
     @Column(name = "fecha_modificacion")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaModificacion;
 
     @Column(name = "fecha_baja")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaBaja;
+
 
 }
