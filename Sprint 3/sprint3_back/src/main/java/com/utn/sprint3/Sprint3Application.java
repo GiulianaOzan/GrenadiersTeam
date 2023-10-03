@@ -55,7 +55,7 @@ public class Sprint3Application {
 
 
 	@Bean
-	CommandLineRunner init(RubroArticuloRepository rubroArticuloRepository1 , ClienteRepository clienteRepository1 ,DomicilioRepository domicilioRepository1 ) {
+	CommandLineRunner init(RubroArticuloRepository rubroArticuloRepository1) {
 		return args -> {
 			System.out.println("ESTOY----FUNCIONANDO");
 
@@ -64,6 +64,8 @@ public class Sprint3Application {
 			RubroArticulo rubro1 = RubroArticulo.builder()
 					.denominacion("Insumos")
 					.build();
+
+			rubroArticuloRepository.save(rubro1);
 
 			//CREAR UNIDAD DE MEDIDA -------------------------------------------------------
 
@@ -79,6 +81,7 @@ public class Sprint3Application {
 
 			unidadMedidaRepository.save(unidadMedida1);
 			unidadMedidaRepository.save(unidadMedida2);
+
 
 			// CREAR INSTANCIA DE ARTICULO INSUMO ------------------------------------------
 
@@ -97,27 +100,31 @@ public class Sprint3Application {
 					.urlImagen("Cheddar.jpg")
 					.build();
 
-			articuloInsumoRepository.save(articuloInsumo1);
-			articuloInsumoRepository.save(articuloInsumo2);
+
 
 			//Vinculamos el rubro a los articulos ------------------------------------------
 
 			articuloInsumo1.setRubroArticulo(rubro1);
 			articuloInsumo2.setRubroArticulo(rubro1);
 
+			articuloInsumoRepository.save(articuloInsumo1);
+			articuloInsumoRepository.save(articuloInsumo2);
 
 			// Vinculamos la unidad medida al articulo -------------------------------------
 
 			articuloInsumo1.setUnidadMedida(unidadMedida1);
 			articuloInsumo2.setUnidadMedida(unidadMedida2);
+			articuloInsumoRepository.save(articuloInsumo1);
+			articuloInsumoRepository.save(articuloInsumo2);
 
-			rubroArticuloRepository.save(rubro1);
 
 			//	CREAR INSTANCIA RUBRO GRAL -------------------------------------------------
 
 			RubroGeneral rubroGeneral1 = RubroGeneral.builder()
 					.denominacion("Manufacturados")
 					.build();
+
+			rubroGeneralRepository.save(rubroGeneral1);
 
 			//CREAR DETALLE ART MANUFACTURADO ----------------------------------------------
 
@@ -129,8 +136,8 @@ public class Sprint3Application {
 					.cantidad(15)
 					.build();
 
-			detalleArticuloManufacturadoRepository.save(detalleArticuloManufacturado1);
-			detalleArticuloManufacturadoRepository.save(detalleArticuloManufacturado2);
+			/*detalleArticuloManufacturadoRepository.save(detalleArticuloManufacturado1);
+			detalleArticuloManufacturadoRepository.save(detalleArticuloManufacturado2);*/
 
 			//CREAR INSTANCIA DE ART MANUFACTU ---------------------------------------------
 
@@ -151,20 +158,29 @@ public class Sprint3Application {
 					.tiempoEstimadoCocina(15)
 					.urlImagen("Panpapa.jpg")
 					.build();
-			articuloManufacturadoRepository.save(articuloManufacturado1);
-			articuloManufacturadoRepository.save(articuloManufacturado2);
+
 
 			//VINCULAR DETALLE ART MANU A ART MANUF ---------------------------------------
 
 			articuloManufacturado1.agregarDetalleArticuloManufacturado(detalleArticuloManufacturado1);
-			articuloManufacturado1.agregarDetalleArticuloManufacturado(detalleArticuloManufacturado2);
+			articuloManufacturado2.agregarDetalleArticuloManufacturado(detalleArticuloManufacturado2);
+
 
 			//Vinculamos el rubro gral a los articulos manu --------------------------------
 
 			articuloManufacturado1.setRubroGeneral(rubroGeneral1);
 			articuloManufacturado2.setRubroGeneral(rubroGeneral1);
 
+			articuloManufacturadoRepository.save(articuloManufacturado1);
+			articuloManufacturadoRepository.save(articuloManufacturado2);
 
+			// VINCULAR DETALLE ART MANU CON ARTICULO INSUMO
+
+			detalleArticuloManufacturado1.setArticuloInsumo(articuloInsumo1);
+			detalleArticuloManufacturado2.setArticuloInsumo(articuloInsumo2);
+
+			detalleArticuloManufacturadoRepository.save(detalleArticuloManufacturado1);
+			detalleArticuloManufacturadoRepository.save(detalleArticuloManufacturado2);
 
 			//CREO CLIENTE -----------------------------------------------------------------
 
@@ -181,6 +197,9 @@ public class Sprint3Application {
 					.email("arnaldo10@gmail.com")
 					.telefono("261568548")
 					.build();
+
+			clienteRepository.save(cliente1);
+			clienteRepository.save(cliente2);
 
 
 			//CREO DOMICILIO ---------------------------------------------------------------
@@ -203,7 +222,8 @@ public class Sprint3Application {
 					.numeroDpto(9)
 					.build();
 
-
+			domicilioRepository.save(domicilio1);
+			domicilioRepository.save(domicilio2);
 
 			//CREO USUARIO -----------------------------------------------------------------
 
@@ -218,15 +238,24 @@ public class Sprint3Application {
 					.rol(Rol.Cliente)
 					.build();
 
+			usuarioRepository.save(usuario1);
+			usuarioRepository.save(usuario2);
+
 			//VINCULAR DOMICILIO CON CLIENTE -----------------------------------------------
 
 			cliente1.setDomicilio(domicilio1);
 			cliente2.setDomicilio(domicilio2);
 
+			clienteRepository.save(cliente1);
+			clienteRepository.save(cliente2);
+
 			//VINCULAR CLIENTE CON USUARIO -------------------------------------------------
 
 			cliente1.setUsuario(usuario2);
 			cliente2.setUsuario(usuario1);
+
+			clienteRepository.save(cliente1);
+			clienteRepository.save(cliente2);
 
 
 			//CREAR ISNTANCIA DETALLE PEDIDO -----------------------------------------------
@@ -242,8 +271,8 @@ public class Sprint3Application {
 					.subtotalCosto(5000)
 					.build();
 
-			detallePedidoRepository.save(detallePedido1);
-			detallePedidoRepository.save(detallePedido2);
+			/*detallePedidoRepository.save(detallePedido1);
+			detallePedidoRepository.save(detallePedido2);*/
 
 			//CREAR INSTANCIA DE PEDIDO ----------------------------------------------------
 
@@ -263,18 +292,19 @@ public class Sprint3Application {
 					.totalCosto(1000)
 					.build();
 
-			pedidoRepository.save(pedido2);
-			pedidoRepository.save(pedido1);
 
 			//AGREGAR DETALLES AL PEDIDO ---------------------------------------------------
 
 			pedido1.agregarDetallePedido(detallePedido1);
-			pedido1.agregarDetallePedido(detallePedido2);
+			pedido2.agregarDetallePedido(detallePedido2);
 
 			//AGREGAR DOMICILIO AL PEDIDO --------------------------------------------------
 
 			pedido1.setDomicilio(domicilio1);
 			pedido2.setDomicilio(domicilio2);
+
+			pedidoRepository.save(pedido1);
+			pedidoRepository.save(pedido2);
 
 
 			//CREAR INSTANCIA DE MP --------------------------------------------------------
@@ -286,16 +316,28 @@ public class Sprint3Application {
 					.nroTarjeta("0880-989")
 					.metodoPago("Bancario")
 					.build();
+			MercadoPagoDatos mercadoPagoDatos2 = MercadoPagoDatos.builder()
+					.estado("En transanccion")
+					.formaPago("Debito")
+					.identificadorPago(9)
+					.nroTarjeta("0880-555")
+					.metodoPago("Retiro en vantana")
+					.build();
 
 			mercadoPagoDatosRepository.save(mercadoPagoDatos1);
+			mercadoPagoDatosRepository.save(mercadoPagoDatos2);
 
 			//AGREGAR EL MP AL PEDIDO -----------------------------------------------------
 
 			pedido1.setMercadoPagoDatos(mercadoPagoDatos1);
-
+			pedido2.setMercadoPagoDatos(mercadoPagoDatos2);
 			//AGREGAR CLIENTES AL PEDIDO --------------------------------------------------
 
 			pedido1.setCliente(cliente1);
+			pedido2.setCliente(cliente2);
+
+			pedidoRepository.save(pedido1);
+			pedidoRepository.save(pedido2);
 
 			//CREAR DETALLE FACTURA -------------------------------------------------------
 
@@ -307,9 +349,13 @@ public class Sprint3Application {
 					.cantidad(4)
 					.subtotal(960)
 					.build();
+			DetalleFactura detalleFactura3 = DetalleFactura.builder()
+					.cantidad(9)
+					.subtotal(8000)
+					.build();
 
-			detalleFacturaRepository.save(detalleFactura1);
-			detalleFacturaRepository.save(detalleFactura2);
+			/*detalleFacturaRepository.save(detalleFactura1);
+			detalleFacturaRepository.save(detalleFactura2);*/
 
 
 			//CREAR INSTANCIAS FACTURA ----------------------------------------------------
@@ -323,29 +369,53 @@ public class Sprint3Application {
 					.totalVenta(8000)
 					.build();
 
-			facturaRepository.save(factura1);
+			Factura factura2 = Factura.builder()
+					.formaPago(FormaPago.Efectivo)
+					.mpMerchantOrderId(65)
+					.mpPaymentId(37)
+					.mpPreferenceId("MP998")
+					.mpPaymentType("MP785")
+					.totalVenta(10000)
+					.build();
 
 			//VINCULAR FACTURA CON DETALLE FACTURA
 
 			factura1.agregarDetalleFactura(detalleFactura1);
 			factura1.agregarDetalleFactura(detalleFactura2);
+			factura2.agregarDetalleFactura(detalleFactura3);
 
 			// VINCULAR FACTURA CON PEDIDO ------------------------------------------------
 
 			pedido1.setFactura(factura1);
+			pedido2.setFactura(factura2);
 
-			clienteRepository.save(cliente1);
-			clienteRepository.save(cliente2);
+			pedidoRepository.save(pedido1);
+			pedidoRepository.save(pedido2);
+
 
 			// VINCULAR DETALLE PEDIDO CON LOS ARTICULOS -----------------------------------
 
 			detallePedido1.setArticuloInsumo(articuloInsumo1);
-			detallePedido2.setArticuloManufacturado(articuloManufacturado1);
+			detallePedido1.setArticuloManufacturado(articuloManufacturado1);
+			detallePedidoRepository.save(detallePedido1);
+
+			detallePedido2.setArticuloManufacturado(articuloManufacturado2);
+			detallePedido2.setArticuloInsumo(articuloInsumo2);
+			detallePedidoRepository.save(detallePedido2);
 
 			//VINCULAR DETALLEFACTURA CON LOS ARTICULOS -----------------------------------
 
-			detalleFactura1.setArticuloInsumo(articuloInsumo2);
+			detalleFactura1.setArticuloInsumo(articuloInsumo1);
+			detalleFactura1.setArticuloManufacturado(articuloManufacturado1);
+			detalleFacturaRepository.save(detalleFactura1);
+
 			detalleFactura2.setArticuloManufacturado(articuloManufacturado2);
+			detalleFactura2.setArticuloInsumo(articuloInsumo2);
+			detalleFacturaRepository.save(detalleFactura2);
+
+			detalleFactura3.setArticuloInsumo(articuloInsumo2);
+			detalleFactura3.setArticuloManufacturado(articuloManufacturado1);
+			detalleFacturaRepository.save(detalleFactura3);
 
 			//Vincular detalle art manuf con Art Insumo ------------------------------------
 
