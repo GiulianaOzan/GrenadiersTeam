@@ -57,7 +57,7 @@ public class Sprint3Application {
 	@Bean
 	CommandLineRunner init(RubroArticuloRepository rubroArticuloRepository1 , ClienteRepository clienteRepository1 ,DomicilioRepository domicilioRepository1 ) {
 		return args -> {
-			System.out.println("----------------ESTOY----FUNCIONANDO---------------------");
+			System.out.println("ESTOY----FUNCIONANDO");
 
 			//CREAR INSTANCIA DE RUBRO ----------------------------------------------------
 
